@@ -13,8 +13,8 @@ BUG; khi het dan tren san thi printtable van hien la ko co dan.
 #include <math.h>
 
 const int quanValue = 5; // it's regularly 5 or 10.
-const int depthSearch = 8; // >=10 is not good for your machine
-
+const int depthSearch = 7; // >=10 is not good for your machine
+const int depthSearch2 = 2;
 
 typedef struct move {
     int number;
@@ -281,6 +281,68 @@ int miniMax(Node *table, int depth, int isMax, int P1Points, int P2Points, int b
     return best;
 }
 
+int miniMax2(Node *table, int depth, int isMax, int P1Points, int P2Points, int borrow){
+    int score = evaluate(table, P1Points, P2Points, borrow);
+
+    if(!isMovesleft(table) || depth == depthSearch2) return score;
+
+    Move move;
+    int best;
+    int saved[14];
+
+    // maximizer's move
+    // In this case, USER is maximizer
+    if(isMax){
+        best = -10000;
+
+        // try all the possible moves
+        for(int number=1; number<6; number++){
+            // check whether if this number is available
+            if(getNode(table, number)->value == 0) continue;
+
+            move.number = number;
+            for(int direction=0; direction<2; direction++){
+                move.direction = direction;
+                
+                // save the state
+                saveTableState(table, saved);
+
+                // make a move
+                play(table, move, &P1Points, &P2Points, &borrow);
+                best = max(best, miniMax(table, depth+1, !isMax, P1Points, P2Points, borrow));
+
+                // undo the move - load the saved state
+                loadTableState(table, saved);    
+            }
+        }
+    }
+    // minimizer's move - AI
+    else{
+        best = 10000;
+
+        // try all the possible moves
+        for(int number=7; number<12; number++){
+            // check whether if this number is available
+            if(getNode(table, number)->value == 0) continue;
+
+            move.number = number;
+            for(int direction=0; direction<2; direction++){
+                move.direction = direction;
+                
+                // save the state
+                saveTableState(table, saved);
+                // make a move
+                play(table, move, &P1Points, &P2Points, &borrow);
+
+                best = max(best, miniMax(table, depth+1, !isMax, P1Points, P2Points, borrow));
+
+                // undo the move - load the saved state
+                loadTableState(table, saved);    
+            }
+        }
+    }
+    return best;
+}
 
 Move findBestMinMove(Node *table, int P1points, int P2points, int borrow){
     int bestVal = 10000;
@@ -302,7 +364,7 @@ Move findBestMinMove(Node *table, int P1points, int P2points, int borrow){
             play(table, move, &P1points, &P2points, &borrow);
             
             // compute evaluation for this move
-            int moveVal = miniMax(table, 0, 0, P1points, P2points, borrow);
+            int moveVal = miniMax2(table, 0, 0, P1points, P2points, borrow);
 
             // undo the move
             loadTableState(table, saved);
@@ -322,7 +384,7 @@ Move findBestMaxMove(Node *table, int P1points, int P2points, int borrow){
     Move bestMove, move;
     int saved[14];
     // evaluate all possible moves
-    for(int number=7; number<12; number++){
+    for(int number=1; number<6; number++){
         // check whether if this number is available
         if(getNode(table, number)->value == 0) continue;
 
@@ -438,42 +500,21 @@ int main(){
         }
 
         if(state){ // USER's turn
-            // ask for next move
-            while(1){
-                printf("USER's move: ");
-                scanf("%d %d", &move.number, &move.direction);
-
-                if(move.number > 5 || move.number == 0){
-                    printf("Must choose a number between 1 and 5, direction 0 or 1.\n");
-                    continue;
-                }
-
-                Node* chosenNode = getNode(table, move.number);
-
-                if(table->next->value + table->next->next->value + table->next->next->next->value + table->next->next->next->next->value + table->next->next->next->next->next->value == 0){
-                    break;
-                }
-
-                if(chosenNode->value == 0){
-                    printf("Your chosen box has no dan left, please choose another one.\n");
-                    continue;
-                }
-                break;            
-            }
-            // make a move    
+            move = findBestMaxMove(table, P1Points, P2Points, borrow);
             play(table, move, &P1Points, &P2Points, &borrow);
+            printf("AI_1's move: %d %d\n", move.number, move.direction);
         }
         else{ // AI's turn
             move = findBestMinMove(table, P1Points, P2Points, borrow);
             play(table, move, &P1Points, &P2Points, &borrow);
-            printf("AI's move: %d %d\n", move.number, move.direction);
+            printf("AI_2's move: %d %d\n", move.number, move.direction);
         }
 
         // switch turn
         state = (state) ? 0 : 1;
 
         printTable(table);
-        printf("USER: %d - AI: %d - borrow: %d\n\n", P1Points, P2Points, borrow);
+        printf("AI_1: %d - AI_2: %d\n\n", P1Points, P2Points);
     }
 
     free(table);
