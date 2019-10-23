@@ -147,7 +147,7 @@ int main(){
         dictionary = btcrt("dictionary.db", 0, 0);
 
         // FILE *fp = fopen("benchmark_large.txt", "r");
-        FILE *fp = fopen("benchmark_small.txt", "r");
+        FILE *fp = fopen("benchmark_standard.txt", "r");
 
         if(fp == NULL){
             perror("Error while opening the file.\n");
@@ -341,12 +341,20 @@ int main(){
                             }
                         }
                         else{ // tim dc roi hoac ko tim dc gi ca
-                            if(n >= 1 ){
+                            if(n > 1 ){
                                 break;
+                            }
+                            else if(n == 1){
+                                if(stripWord[strlen(stripWord)-1] != ' '){
+                                    push(stack, ' ');
+                                    mvaddch(Y, X++, ' ');
+                                    move(Y, X);
+                                }
                             }
                             else if(n == 0) break;
                             else{
-                                if(word[strlen(word)-1] != ' '){
+                                // if(word[strlen(word)-1] != ' '){
+                                if(stripWord[strlen(stripWord)-1] != ' '){
                                     push(stack, ' ');
                                     mvaddch(Y, X++, ' ');
                                     move(Y, X);
