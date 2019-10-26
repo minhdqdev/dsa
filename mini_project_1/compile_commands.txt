@@ -1,0 +1,1 @@
+gcc autocomplete.c -lncurses -ltinfo -o autocomplete
