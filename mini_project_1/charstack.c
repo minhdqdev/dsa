@@ -1,3 +1,8 @@
+/*
+Reference:
+- https://www.geeksforgeeks.org/stack-data-structure/
+*/
+
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h>

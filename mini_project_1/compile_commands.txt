@@ -1,1 +1,2 @@
 gcc autocomplete.c -lncurses -ltinfo -o autocomplete
+gcc main.c -lncurses -ltinfo bt-5.0.0/lib/libbt.a -o main

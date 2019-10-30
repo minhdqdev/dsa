@@ -1,3 +1,8 @@
+/*
+Reference:
+- https://ourcodeworld.com/articles/read/249/implementation-of-the-soundex-algorithm-function-in-different-programming-languages
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -44,14 +49,3 @@ void init()
 	for (i = 0; cls[i]; i++)
 		add_code(cls[i], i - 1);
 }
-
-// int main(){
-
-//     init();
-
-//     printf("%s\n", soundex("hav"));
-//     printf("%s\n", soundex("b.txt"));
-
-//     printf("%d\n", strcmp(soundex("hav"), soundex("b.txt")));
-
-// }
