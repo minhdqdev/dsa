@@ -1,0 +1,16 @@
+[STATIONS]
+S1=Lang
+S2=Ha Dong
+S3=Cat Linh
+S4=Ho Tay
+S5=My Dinh
+S6=Truong Trinh
+S7=Lac Long Quan
+S8=Le Duan
+S9=Giap Bat
+[LINES]
+M1=S1 S2 S4 S3 S7
+M2=S3 S5 S6 S8 S9
+M3=S2 S9 S7
+M4=S4 S8 S9 S1
+M5=S5 S6 S7 S2 S3
