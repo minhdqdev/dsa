@@ -4,11 +4,10 @@ to represent sparse graphs - those for which |E| is much less than |V|^2
 
 Implement Adjacency List using Red Black Tree
 
-Author: Dang Quang Minh (minh.dq176823@sis.hust.edu.vn)
+Dang Quang Minh (minh.dq176823@sis.hust.edu.vn)
 */
 
 #include "libfdr/jrb.h"
-#include <stdio.h>
 
 void addEdge(JRB g, int v1, int v2){
     JRB node = jrb_find_int(g, v1);
@@ -48,8 +47,7 @@ int getAdjacentVertices(JRB g, int vertex, int *output){
     
     JRB node = (JRB)jrb_find_int(g, vertex);
 
-    if(node == NULL) return 0;
-    else{
+    if(node != NULL){
         JRB subTree = (JRB)jval_v(node->val);
 
         jrb_traverse(node, subTree){
@@ -70,55 +68,55 @@ void dropGraph(JRB g){
     jrb_free_tree(g);
 }
 
-int main(){
-    JRB graph = make_jrb();
+// int main(){
+//     JRB graph = make_jrb();
 
-    addEdge(graph, 2, 3);
+//     addEdge(graph, 2, 3);
 
-    addEdge(graph, 1, 2);
-    addEdge(graph, 1, 3);
-    addEdge(graph, 1, 6);
+//     addEdge(graph, 1, 2);
+//     addEdge(graph, 1, 3);
+//     addEdge(graph, 1, 6);
 
-    printf("1 and 6: %d\n", adjacent(graph, 1, 6));
-    printf("1 and 5: %d\n", adjacent(graph, 1, 5));
+//     printf("1 and 6: %d\n", adjacent(graph, 1, 6));
+//     printf("1 and 5: %d\n", adjacent(graph, 1, 5));
 
-    int output[100];
-    int n = getAdjacentVertices(graph, 1, output);
+//     int output[100];
+//     int n = getAdjacentVertices(graph, 1, output);
 
-    if(n == 0) printf("No adjacent vertices of node 1\n");
-    else {
-        printf("Adjacent vertices of node 1: ");
-        for(int i=0; i<n; i++) printf("%5d", output[i]);
-        printf("\n");
-    }
+//     if(n == 0) printf("No adjacent vertices of node 1\n");
+//     else {
+//         printf("Adjacent vertices of node 1: ");
+//         for(int i=0; i<n; i++) printf("%5d", output[i]);
+//         printf("\n");
+//     }
 
-    n = getAdjacentVertices(graph, 2, output);
+//     n = getAdjacentVertices(graph, 2, output);
 
-    if(n == 0) printf("No adjacent vertices of node 2\n");
-    else {
-        printf("Adjacent vertices of node 2: ");
-        for(int i=0; i<n; i++) printf("%5d", output[i]);
-        printf("\n");
-    }
+//     if(n == 0) printf("No adjacent vertices of node 2\n");
+//     else {
+//         printf("Adjacent vertices of node 2: ");
+//         for(int i=0; i<n; i++) printf("%5d", output[i]);
+//         printf("\n");
+//     }
 
-    n = getAdjacentVertices(graph, 7, output);
+//     n = getAdjacentVertices(graph, 7, output);
 
-    if(n == 0) printf("No adjacent vertices of node 7\n");
-    else {
-        printf("Adjacent vertices of node 7: ");
-        for(int i=0; i<n; i++) printf("%5d", output[i]);
-        printf("\n");
-    }
+//     if(n == 0) printf("No adjacent vertices of node 7\n");
+//     else {
+//         printf("Adjacent vertices of node 7: ");
+//         for(int i=0; i<n; i++) printf("%5d", output[i]);
+//         printf("\n");
+//     }
 
-    if(jrb_find_int(graph, 1)){
-        printf("Graph is not free yet!\n");
-    }
+//     if(jrb_find_int(graph, 1)){
+//         printf("Graph is not free yet!\n");
+//     }
 
-    dropGraph(graph);
+//     dropGraph(graph);
 
-    if(jrb_find_int(graph, 1)){
-        printf("Graph is not free!\n");
-    }
+//     if(jrb_find_int(graph, 1)){
+//         printf("Graph is not free!\n");
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
