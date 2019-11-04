@@ -8,9 +8,11 @@ S6=Truong Trinh
 S7=Lac Long Quan
 S8=Le Duan
 S9=Giap Bat
+S10=Long Bien
 [LINES]
 M1=S1 S2 S4 S3 S7
 M2=S3 S5 S6 S8 S9
 M3=S2 S9 S7
 M4=S4 S8 S9 S1
 M5=S5 S6 S7 S2 S3
+M6=S10 S9

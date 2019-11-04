@@ -8,6 +8,7 @@ Dang Quang Minh (minh.dq176823@sis.hust.edu.vn)
 */
 
 #include "libfdr/jrb.h"
+#include <stdio.h>
 
 void addEdge(JRB g, int v1, int v2){
     JRB node = jrb_find_int(g, v1);

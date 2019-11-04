@@ -25,28 +25,6 @@ Station* newStation(char *id, char *name){
     return newStation;
 }
 
-void addEdge(JRB g, char *station1, char *station2){
-    JRB node = jrb_find_str(g, station1);
-
-    if(node == NULL){
-        JRB tree = make_jrb();
-        node = jrb_insert_str(g, station1, new_jval_v(tree));
-    }
-
-    JRB subtree = (JRB)jval_v(node->val);
-    jrb_insert_str(subtree, station2, new_jval_i(1));
-
-    node = jrb_find_str(g, station2);
-
-    if(node == NULL){
-        JRB tree = make_jrb();
-        node = jrb_insert_str(g, station2, new_jval_v(tree));
-    }
-
-    subtree = (JRB)jval_v(node->val);
-    jrb_insert_str(subtree, station1, new_jval_i(1));
-}
-
 int adjacent(JRB g, char *station1, char *station2){
     JRB node = jrb_find_str(g, station1);
 
@@ -58,6 +36,31 @@ int adjacent(JRB g, char *station1, char *station2){
     }
 }
 
+void addEdge(JRB g, char *station1, char *station2){
+    JRB node = jrb_find_str(g, station1);
+
+    if(node == NULL){
+        JRB tree = make_jrb();
+        node = jrb_insert_str(g, station1, new_jval_v(tree));
+    }
+
+    JRB subtree = (JRB)jval_v(node->val);
+    JRB valnode = jrb_find_str(subtree, station2);
+    if(valnode == NULL) jrb_insert_str(subtree, station2, new_jval_i(1));
+    
+
+    node = jrb_find_str(g, station2);
+
+    if(node == NULL){
+        JRB tree = make_jrb();
+        node = jrb_insert_str(g, station2, new_jval_v(tree));
+    }
+
+    subtree = (JRB)jval_v(node->val);
+    valnode = jrb_find_str(subtree, station1);
+    if(valnode == NULL) jrb_insert_str(subtree, station1, new_jval_i(1));
+}
+
 int getAdjacentVertices(JRB g, char *station, char *output[]){
     int count = 0;
 
@@ -67,7 +70,7 @@ int getAdjacentVertices(JRB g, char *station, char *output[]){
         JRB subtree = (JRB)jval_v(node->val);
 
         jrb_traverse(node, subtree){
-            strcpy(output[count++], jval_s(node->key));
+            output[count++] = jval_s(node->key);
         }
     }
     return count;
@@ -83,7 +86,7 @@ void dropGraph(JRB g){
     jrb_free_tree(g);
 }
 
-void loadGraphFromFile(JRB g, char *listStation[], int *countStation ,const char *filename){
+void loadGraphFromFile(JRB g, char* listStation[], int *countStation, const char *filename){
     FILE *fp = fopen(filename, "r");
 
     if(fp == NULL){
@@ -113,9 +116,7 @@ void loadGraphFromFile(JRB g, char *listStation[], int *countStation ,const char
             strncpy(id, buffer, i);
             strcpy(name, buffer+i+1);
 
-            Station *station = newStation(id, name);
-
-            listStation[(*countStation)++] = (char*)station;
+            listStation[(*countStation)++] = (char*)newStation(id, name);            
         }
         else if(flag == 2){
             int i = 0;
@@ -125,42 +126,38 @@ void loadGraphFromFile(JRB g, char *listStation[], int *countStation ,const char
 
             int left = 0;
             int right = 0;
-            char listAdjacentStation[100][50];
-            int countAdjacentStation = 0;
+            char listAdjacentStationId[100][50];
+            int countAdjacentStationId = 0;
 
             while(lines[right] != '\0'){
                 if(lines[right++] == ' '){
-                    strncpy(listAdjacentStation[countAdjacentStation++], lines+left, right-left-1);
+                    strncpy(listAdjacentStationId[countAdjacentStationId++], lines+left, right-left-1);
                     left = right;
                     continue;
                 }
             }
-            strncpy(listAdjacentStation[countAdjacentStation++], lines+left, right-left);
+            strncpy(listAdjacentStationId[countAdjacentStationId++], lines+left, right-left);
 
-            for(int i=0; i<countAdjacentStation-1; i++){
-                for(int j=i+1; j<countAdjacentStation; j++){
-                    Station* station1;
-                    Station* station2;
+            for(int i=0; i<countAdjacentStationId-1; i++){
+                for(int j=i+1; j<countAdjacentStationId; j++){
+                    char* station1;
+                    char* station2;
                     for(int k=0; k<*countStation; k++){
-                        if(strcmp(((Station*)listStation[k])->id, listAdjacentStation[i]) == 0) station1 = (Station*)listAdjacentStation[i];
-                        else if(strcmp(((Station*)listStation[k])->id, listAdjacentStation[j]) == 0) station2 = (Station*)listAdjacentStation[j];
+                        if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[i]) == 0) station1 = listStation[k];
+                        else if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[j]) == 0) station2 = listStation[k];
                     }
-
                     addEdge(g, (char*)station1, (char*)station2);
                 }
             }
         }
     }
-
-    // for(int i=0; i<*countStation; i++){
-    //     printf("Station: %s - %s\n", ((Station*)listStation[i])->id, ((Station*)listStation[i])->name);
-    // }
 }
 
 void print_menu(){
-    printf("1. Find adjacent stations\n");
+    printf("\n1. Find adjacent stations\n");
     printf("2. Print stations\n");
     printf("0. Exit\n");
+    printf("Your choice ?: ");
 }
 
 char* getStationById(char *listStation[], int countStation, char* id){
@@ -170,10 +167,18 @@ char* getStationById(char *listStation[], int countStation, char* id){
     return NULL;
 }
 
+char* getStationByName(char *listStation[], int countStation, char* name){
+    for(int i=0; i<countStation; i++){
+        if(strcmp(((Station*)listStation[i])->name, name) == 0) return listStation[i];
+    }
+    return NULL;
+}
+
 int main(){
     JRB graph = make_jrb();
     char *listStation[100];
-    int countStation;
+    int countStation=0;
+
     loadGraphFromFile(graph, listStation, &countStation, "metro_lines_data.txt");
     printf("Loaded graph from file!\n");
 
@@ -186,30 +191,38 @@ int main(){
         switch(ans){
             case 0: running = 0; dropGraph(graph); break;
             case 1:{
+                char temp_ans[50];
                 char ans[50];
-                printf("Enter station's name: ");
-                fgets(ans, 50, stdin);
+                printf("\nEnter station's name (or id): ");
+                fgets(temp_ans, 50, stdin); removeNewline(temp_ans); strip(temp_ans, ans);
 
                 char *output[100];
-                // int n = getAdjacentVertices(graph, ans, output);
 
-                for(int k=0; k<2; k++){
-                    printf("Station: %s - %s\n", ((Station*)listStation[k])->id, ((Station*)listStation[k])->name);
+                for(int i=0; i<100; i++) output[i] = (char*)malloc(sizeof(char*));
+
+                char* station = getStationById(listStation, countStation, ans);
+                if(station == NULL){
+                    station = getStationByName(listStation, countStation, ans);
+                    if(station == NULL){
+                        perror("Can't find this station.\n");
+                        break;
+                    }
                 }
-                // int b = 3;
-                // printf("Station: %s - %s\n", ((Station*)(listStation[0]))->id, ((Station*)(listStation[0]))->name);
-                // printf("Station: %s - %s\n", ((Station*)listStation[8])->id, ((Station*)listStation[8])->name);
-                
+                int n = getAdjacentVertices(graph, station, output);
 
-                // if(getStationById(listStation, countStation, "S1") == NULL){
-                //     printf("s1 id: %s - name: %s\n", ((Station*)getStationById(listStation, countStation, "S1"))->id, ((Station*)getStationById(listStation, countStation, "S1"))->name);
-                // }
-                // if(getStationById(listStation, countStation, "S2") == NULL){
-                //     printf("s2 id: %s - name: %s\n", ((Station*)getStationById(listStation, countStation, "S2"))->id, ((Station*)getStationById(listStation, countStation, "S2"))->name);
-                // }
-                // printf("Adjacent: %d\n", adjacent(graph, getStationById(listStation, countStation, "S2"), getStationById(listStation, countStation, "S1")));
+                printf("Adjacent Stations: \n");
+                for(int i=0; i<n; i++) printf("%s - %s\n", ((Station*)output[i])->id, ((Station*)output[i])->name);
+                printf("\n");
 
-                // printf("n: %d\n", n);
+                break;
+            }
+            case 2:{
+                for(int i=0; i<countStation; i++) printf("Station: %s - %s\n", ((Station*)listStation[i])->id, ((Station*)listStation[i])->name);
+
+                break;
+            }
+            default:{
+                perror("Invalid command!");
                 break;
             }
         }
