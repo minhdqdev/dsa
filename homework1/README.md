@@ -12,3 +12,9 @@ gcc main.c libfdr/libfdr.a -o main
 ```
 
 ### Use
+```
+1. Find adjacent stations
+2. Print stations
+0. Exit
+Your choice ?: 
+```

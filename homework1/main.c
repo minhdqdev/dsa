@@ -37,6 +37,8 @@ int adjacent(JRB g, char *station1, char *station2){
 }
 
 void addEdge(JRB g, char *station1, char *station2){
+    if(strcmp(station1, station2) == 0) return; // prevent adding a loop
+
     JRB node = jrb_find_str(g, station1);
 
     if(node == NULL){
@@ -138,16 +140,26 @@ void loadGraphFromFile(JRB g, char* listStation[], int *countStation, const char
             }
             strncpy(listAdjacentStationId[countAdjacentStationId++], lines+left, right-left);
 
+            // for(int i=0; i<countAdjacentStationId-1; i++){
+            //     for(int j=i+1; j<countAdjacentStationId; j++){
+            //         char* station1;
+            //         char* station2;
+            //         for(int k=0; k<*countStation; k++){
+            //             if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[i]) == 0) station1 = listStation[k];
+            //             else if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[j]) == 0) station2 = listStation[k];
+            //         }
+            //         addEdge(g, (char*)station1, (char*)station2);
+            //     }
+            // }
+
             for(int i=0; i<countAdjacentStationId-1; i++){
-                for(int j=i+1; j<countAdjacentStationId; j++){
-                    char* station1;
-                    char* station2;
-                    for(int k=0; k<*countStation; k++){
-                        if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[i]) == 0) station1 = listStation[k];
-                        else if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[j]) == 0) station2 = listStation[k];
-                    }
-                    addEdge(g, (char*)station1, (char*)station2);
+                char *station1;
+                char *station2;
+                for(int k=0; k<*countStation; k++){
+                    if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[i]) == 0) station1 = listStation[k];
+                    else if(strcmp(((Station*)(listStation[k]))->id, listAdjacentStationId[i+1]) == 0) station2 = listStation[k];
                 }
+                addEdge(g, (char*)station1, (char*)station2);
             }
         }
     }
@@ -227,6 +239,5 @@ int main(){
             }
         }
     }
-    
     return 0;
 }
