@@ -1,3 +1,7 @@
+/*
+Search graph using DFS and BFS
+*/
+
 #include "libfdr/jrb.h"
 #include "libfdr/dllist.h"
 
@@ -85,9 +89,7 @@ void BFS(JRB graph, int start, int stop, void(*func)(int)){
 
     dll_append(queue, new_jval_i(start));
 
-    int foundStop = 0;
-
-    while(!dll_empty(queue) && !foundStop){
+    while(!dll_empty(queue)){
         // pop queue
         Dllist node = dll_first(queue);
         int v = jval_i(node->val);
@@ -97,22 +99,17 @@ void BFS(JRB graph, int start, int stop, void(*func)(int)){
             func(v);
             visited[v] = 1;
 
-            if(v != stop){
-                int adjacentVertices[100];
-                int n = getAdjacentVertices(graph, v, adjacentVertices);
+            if(v == stop) return;
+            int adjacentVertices[100];
+            int n = getAdjacentVertices(graph, v, adjacentVertices);
 
-                for(int i=0; i<n; i++){
-                    if(!visited[adjacentVertices[i]]){
-                        dll_append(queue, new_jval_i(adjacentVertices[i]));
-                    }
+            for(int i=0; i<n; i++){
+                if(!visited[adjacentVertices[i]]){
+                    dll_append(queue, new_jval_i(adjacentVertices[i]));
                 }
             }
-            else foundStop = 1;
-
-            
         }
     }
-
     free_dllist(queue);
 }
 
@@ -133,9 +130,7 @@ void DFS(JRB graph, int start, int stop, void(*func)(int)){
     
     dll_append(stack, new_jval_i(start));
 
-    int foundStop = 0;
-
-    while(!dll_empty(stack) && !foundStop){
+    while(!dll_empty(stack)){
         // pop stack
         Dllist node = dll_last(stack);
         int v = jval_i(node->val);
@@ -145,15 +140,13 @@ void DFS(JRB graph, int start, int stop, void(*func)(int)){
             func(v);
             visited[v] = 1;
 
-            if(v != stop){
-                int adjacentVertices[100];
-                int n = getAdjacentVertices(graph, v, adjacentVertices);
+            if(v == stop) return;
+            int adjacentVertices[100];
+            int n = getAdjacentVertices(graph, v, adjacentVertices);
 
-                for(int i=0; i<n; i++){
-                    if(!visited[adjacentVertices[i]]) dll_append(stack, new_jval_i(adjacentVertices[i]));
-                }
+            for(int i=0; i<n; i++){
+                if(!visited[adjacentVertices[i]]) dll_append(stack, new_jval_i(adjacentVertices[i]));
             }
-            else foundStop = 1;
         }
     }
     free_dllist(stack);
