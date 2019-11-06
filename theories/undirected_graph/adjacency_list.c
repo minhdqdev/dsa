@@ -70,8 +70,12 @@ void dropGraph(JRB g){
     jrb_free_tree(g);
 }
 
+JRB createGraph(){
+    return make_jrb();
+}
+
 int main(){
-    JRB graph = make_jrb();
+    JRB graph = createGraph();
 
     addEdge(graph, 2, 3);
 

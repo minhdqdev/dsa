@@ -1,3 +1,7 @@
 https://github.com/quanghien95/DSA
 
 include "libfdr/fields.h" ###When compile You add libfdr/libfdr.a to the end of your compile line(see the jrb_example.c)
+
+gcc adjacency_list.c libfdr/libfdr.a -o adjacency_list
+
+gcc bfs_graph.c libfdr/libfdr.a -o bfs_graph # warning is ok.
