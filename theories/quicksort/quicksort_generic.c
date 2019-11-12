@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "libfdr/jrb.h"
+
 // generic swap
 void swap_gen(void *a, void *b, size_t size){
     void *c = malloc(size);
@@ -11,35 +13,38 @@ void swap_gen(void *a, void *b, size_t size){
     free(c);
 }
 
-//TODO: Similarly, we have the exchange function for two item in an array.
-
-int int_compare(void *a, void *b) { return (*(int*)a - *(int*)b); }
-
-
-int partition(int arr[], int left, int right){
-    int pivot = arr[left];
-
-    int i = left;
-
-    for(int j=left+1; j<=right; j++){
-        if(arr[j] < pivot){
-            i++;
-            swap(&arr[i], &arr[j]);
-        }
-    }
-
-    swap(&arr[i], &arr[left]);
-    return i;
+void exch(void *buf, int size, int i, int j){
+    void *temp = malloc(size);
+    memcpy(temp, buf+i, size);
+    memcpy(buf+i, buf+j, size);
+    memcpy(buf+j, temp, size);
+    free(temp);
 }
 
-int quickSort(int arr[], int left, int right){
-    if(left < right){
-        int pivot = partition(arr, left, right);
+void sort_gen(Jval a[], int l, int r, int (*compare)(Jval*, Jval*)){
 
-        quickSort(arr, left, pivot-1);
-        quickSort(arr, pivot+1, right);
-    }
-    
+}
+
+int search_gen(Jval a[], int l, int r, Jval item, int (*compare)(Jval*, Jval*)){
+
+
+}
+
+int compare_i(Jval* a, Jval* b) {
+    if ( jval_i(*a)==jval_i(*b) ) return 0;
+    if ( jval_i(*a) < jval_i(*b) ) return -1;
+    else return 1;
+}
+void sort_i (Jval a[], int l, int r) {
+    sort_gen(a, l, r, compare_i);
+}
+int search_i (Jval a[], int l, int r, int x) {
+    return search_gen(a, l, r, new_jval_i(x), compare_i);
+}
+Jval* create_array_i (int n) {
+    Jval * array = (Jval *) malloc(sizeof(Jval)*n);
+    for (int i=0; i<n; i++) array[i] = new_jval_i( rand() );
+    return array;
 }
 
 void printArray(int arr[], int size){
