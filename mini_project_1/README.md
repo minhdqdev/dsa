@@ -1,8 +1,8 @@
 # Mini Project 1
 ## Team Members
-- Dang Quang Minh (minh.dq176823@sis.hust.edu.vn)
-- Nguyen Tri Hung (hung.nt176773@sis.hust.edu.vn)
-- Pham Ngoc Dien (dien.pn176715@sis.hust.edu.vn)
+- Minh Dang Quang (minh.dq176823@sis.hust.edu.vn) (leader)
+- Hung Nguyen Tri (hung.nt176773@sis.hust.edu.vn)
+- Dien Pham Ngoc (dien.pn176715@sis.hust.edu.vn)
 
 ### Assigned Tasks
 - **Add new word**: Minh

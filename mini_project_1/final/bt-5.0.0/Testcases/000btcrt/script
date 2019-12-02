@@ -1,3 +1,0 @@
-echo on
-create test_db
-quit
