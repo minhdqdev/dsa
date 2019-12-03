@@ -1,5 +1,0 @@
-echo on
-create test_db
-execute ../inskeysrand.bt
-execute ../fndkeysrand.bt
-quit
