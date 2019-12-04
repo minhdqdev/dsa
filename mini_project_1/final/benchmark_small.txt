@@ -1,7 +1,0 @@
-test1.txt
-b.txt
-tet.txt
-w.txt
-c.txt
-test2.txt
-a.txt
