@@ -9,7 +9,11 @@
 
 ## Installation and Usage
 ### Requirements
+This project requires Python 3 for preprocessing data.
 
+```
+pip3 install Unidecode
+```
 ### Compile
 ```
 gcc
