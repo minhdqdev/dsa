@@ -53,11 +53,11 @@ int getVertexIdByName(Graph graph, char *name){
 }
 
 void addVertexToRoute(Graph graph, char *route_id, int v){
-    JRB node = jrb_find_str(graph.edges, route_id);
+    JRB node = jrb_find_str(graph.routes, route_id);
 
     if(node == NULL){
-        JRB subNode = make_jrb();
-        node = jrb_insert_str(graph.routes, route_id, new_jval_v(subNode));
+        JRB s = make_jrb();
+        node = jrb_insert_str(graph.routes, route_id, new_jval_v(s));
     }
 
     JRB subTree = (JRB)jval_v(node->val);
@@ -67,8 +67,6 @@ void addVertexToRoute(Graph graph, char *route_id, int v){
     if(subNode == NULL){
         jrb_insert_int(subTree, v, new_jval_i(1));
     }
-
-
 }
 
 void addEdge(Graph graph, int v1, int v2, double weight){
@@ -103,18 +101,46 @@ double getEdgeValue(Graph graph, int v1, int v2){
 }
 
 void print_menu(){
-	printf("\n----- BUS MAP -----\n");
+	printf("\n+ ---- BUS MAP ---- +\n");
     printf("1. Find shortest path\n");
     printf("2. Print all vertices\n");
+    printf("3. Print all vertices of route\n");
     printf("0. Exit\n");
     printf("Your choice: ");
 }
 
 void printVertices(Graph graph){
     JRB node;
-    printf("Vertices:");
+    printf("\nVertices: \n");
     jrb_traverse(node, graph.vertices){
         printf("%d : %s\n", jval_i(node->key), jval_s(node->val));
+    }
+    printf("\n");
+}
+
+void printVerticesOfRoute(Graph graph, char *route_id){
+    JRB node = jrb_find_str(graph.routes, route_id);
+
+    if(node == NULL){
+        printf("Can't find route %s.\n", route_id);
+        return;
+    }
+
+    JRB subTree = (JRB)jval_v(node->val);
+    JRB subNode;
+    printf("Vertices of route %s: ", route_id);
+    jrb_traverse(subNode, subTree){
+        printf("%s - ", getVertexNameById(graph, jval_i(subNode->key)));
+    }
+    printf("\n");
+}
+
+void printRoutes(Graph graph){
+    JRB node;
+
+    printf("Routes: ");
+    jrb_traverse(node, graph.routes){
+        printf("%s - ", jval_s(node->key));
     }
     printf("\n");
 }
@@ -150,7 +176,7 @@ void loadFromFile(Graph graph, const char *filename){
             int index = 0; // index of ':' character
             int id;
             char *verticeName = (char*)malloc(sizeof(char) * 500);
-            char verticeId[10];
+            char *verticeId = (char*)malloc(sizeof(char) * 10);
 
             while(buffer[index] != '\0'){
                 if(buffer[index] == ':'){
@@ -159,14 +185,18 @@ void loadFromFile(Graph graph, const char *filename){
 
                     strncpy(verticeName, buffer+index+2, sizeof(char) * 500);
                     addVertex(graph, id, verticeName);
+                    // printf("%d - %s\n", id, verticeName);
                     break;
                 }
                 index++;
             }   
+
+            // free(verticeName);
+            // free(verticeId);
         } 
         else if(flag == 1){ // read route_id
             route_id = (char*)malloc(sizeof(char) * 20);
-            strncpy(route_id, buffer, sizeof(route_id));
+            strncpy(route_id, buffer, sizeof(char) * 20);
         }
         else if(flag == 2){ // read edges
             int rindex = 0; // index of the first space character
@@ -240,78 +270,64 @@ int outdegree (Graph graph, int v, int* output){
     return total;   
 }
 
-double findShortestPath(Graph g, int s, int t, int *path, int *length){
-    /*
-    s la key cua vertex bat dau, t la key cua vertex la ket thuc
-    */
-    double distance[1000], min, w, total;
-    int previous[1000]; // array of parents of vertices. 
-    int tmp[1000]; // array of vertices on shortest path.
+double findShortestPath(Graph graph, int s, int t, int *path, int *length){
+    double distance[1000];
+    int previous[1000], u, visit[1000];
     
-    int n, output[100], i, u, v, start;
-    Dllist ptr, queue, node;
-
     if(s == t){
-   	    printf("You are where you need to be ^_^!");
-   	    return 0;
+    	printf("You are where you need to be ^_^!");
+		return 0;	
+	}
+    
+    for (int i=0; i<1000; i++){
+        distance[i] = INF;
+        visit[i] = 0;
+        previous[i] = 0;
     }
-
-    for (i=0; i<1000; i++) distance[i] = INF;
     distance[s] = 0;
     previous[s] = s;
-       
+    visit[s] = 1;
+    
+    Dllist ptr, queue, node;
     queue = new_dllist();
     dll_append(queue, new_jval_i(s));
-
-    while(!dll_empty(queue)){
-        // get u from the priority queue
-        min = INF;
-        dll_traverse(ptr, queue){
-            u = jval_i(ptr->val);            
-            if (min > distance[u]){
-                min = distance[u];
-                node = ptr;
-            }                 
-        }
-        dll_delete_node(node);
-      
-        if (u == t) break;
     
-        n = outdegree(g, u, output);
-        for(i=0; i<n; i++){
-            v = output[i];
-            w = getEdgeValue(g, u, v);
-            if(distance[v] > distance[u] + w){
-                distance[v] = distance[u] + w;
-                previous[v] = u;
-            }     
-            dll_append(queue, new_jval_i(v));
+    // Duyet Queue
+    while (!dll_empty(queue)){
+        node = dll_first(queue);
+        int u = jval_i(node->val);
+        dll_delete_node(node);
+        int output[100];
+        int number = outdegree(graph,u,output);
+        for (int i =0; i<number; i++) {
+            if (visit[output[i]]==0) {
+                visit[output[i]] = 1;
+                dll_append(queue,new_jval_i(output[i]));
+            }
+            if ((getEdgeValue(graph,u,output[i])+distance[u])<distance[output
+                                                                       [i]]) {
+                distance[output[i]]= getEdgeValue(graph,u,output[i])+distance[u];
+                previous[output[i]] = u;
+            }
         }
     }
-
-   total = distance[t];
-   if(total != INF){
-        tmp[0] = t;
-        n = 1;              
-        while (t != s){
-            t = previous[t];
-            tmp[n++] = t;
-        }
-        for (i=n-1; i>=0; i--)
-            path[n-i-1] = tmp[i];
-        *length = n;         
-   }else{
-   		printf("There is no path from %s to %s!\n", getVertexNameById(g, s), getVertexNameById(g, t));
-   		return 0;
-   }
-   return total;
+    path[0] = t;
+    *length = 1;
+    int cur = t;
+    while (cur != s){
+        path[*length] = previous[cur];
+        *length = *length+1;
+        cur = previous[cur];
+    }
+    
+    return distance[t];
 }
 
 int main(){
     // load graph from file
     Graph g = createGraph();
 
-    loadFromFile(g, "output.txt");
+    loadFromFile(g, "bus_data.txt");
 
     // addVertex(g, 10, "Ha Noi");
 	// addVertex(g, 15, "HCM");
@@ -340,16 +356,18 @@ int main(){
                 // finding shortest path
                 int v1;
                 int v2;
-                int length, output[100];
+                int length=0, output[100];
 
-                char name1[100];
-                char name2[100];
-
+                char name1[300];
+                char name2[300];
+                char sure[300];
+                printf("Fill in the information...\n");
+                printf("Press ENTER to continue...\n");
+                getchar();
                 printf("Picking up point: ");
-                // fflush(stdin);
-                fgets(name1, 500, stdin);
+                fflush(stdin);
+                fgets(name1, 300, stdin);
                 removeNewline(name1);
-
                 v1 = getVertexIdByName(g, name1);
                 if(v1 == -1){
                     printf("Invalid picking up point!\n");
@@ -357,39 +375,69 @@ int main(){
                 }
                 
                 printf("Dropping point: ");
-                // fflush(stdin);
-                fgets(name2, 500, stdin);
+                //fflush(stdin);
+                fgets(name2, 300, stdin);
                 removeNewline(name2);
                 v2 = getVertexIdByName(g, name2);
-                if(v2 == -1){
+                
+                //printf("%d:%s %d:%s!",v1, name1, v2, name2);
+                if(v2==-1){
                     printf("Invalid dropping point!\n");
                     continue;
                 }
-                // n is total weights of the shortest path
-                double n = findShortestPath(g, v1, v2, output, &length);
                 
-                printf("Shortest Path: ");
-                for(int i=0; i<length-1; i++){
-                    printf("%s => ", getVertexNameById(g, output[i]));
+                // printf("%d:%s %d:%s\n",v1, name1, v2, name2);
+                // n is the number of vertices
+                // output is the array of vertices' id (or name)
+                // Ex: 01 -> 04 -> 26
+                int n;
+                n=findShortestPath(g, v2, v1, output, &length);
+                // printf("%d\n", n);
+                printf("The shortest path from %s to %s is:\n", getVertexNameById(g, v1), getVertexNameById(g, v2));
+                if(n == INF){
+                    printf("There is no path from %s to %s!\n", getVertexNameById(g, v1), getVertexNameById(g, v2));
                 }
-                printf("%s\n", getVertexNameById(g, output[length-1]));
+                else{
+                    for(int i=0; i<length; i++){
+                        if(i == 0){
+                            printf("%s", getVertexNameById(g, output[i]));
+                        }
+                        else{
+                            printf(" => %s", getVertexNameById(g, output[i]));	
+                        }    
+                    }	
+                }
+                printf("\nFinished!\n");
 
-                // length is the number of route
+                // n is the number of route
                 // input is the array of vertices' id
                 // output is the array of route
                 // Ex: 01 -> 5A -> 21A 
                 //int m = getRouteFromPath(g, input, output);
-                //printf("Press any button to continue...");
+//                 printf("Press ENTER to continue...\n");
+                break;
+            }
+            case 2:{
+                printVertices(g);
+                break;
+            }
+            case 3:{
+                printRoutes(g);
+                char *route_id = (char*)malloc(sizeof(char) * 10);
+
+                printf("Enter the route_id: ");
+                fgets(route_id, 10, stdin);
+                removeNewline(route_id);
+
+                printVerticesOfRoute(g, route_id);
+
+                free(route_id);
                 break;
             }
             case 0:{
                 running = 0;
                 dropGraph(g);
                 printf("Exit program !\n");
-                break;
-            }
-            case 2:{
-                printVertices(g);
                 break;
             }
             default:{

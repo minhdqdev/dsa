@@ -56,8 +56,8 @@ def preprocess(filename, output_filename=None):
 
     with open(output_filename, 'w') as f:
         f.write('# VERTICES\n')
-        # for verticeName in sorted(list(vertices.keys())):
-        for verticeName in vertices.keys():
+        for verticeName in sorted(list(vertices.keys())):
+        # for verticeName in vertices.keys():
             f.write(f'{vertices[verticeName]} : {verticeName}\n')
 
         for route_id in data.keys():
