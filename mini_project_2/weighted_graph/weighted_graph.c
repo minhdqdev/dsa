@@ -28,6 +28,8 @@ void addVertex(Graph graph, int id, char *name){
     }
 }
 
+void haveVertex()
+
 char *getVertex(Graph graph, int id){
     JRB node = jrb_find_int(graph.vertices, id);
 

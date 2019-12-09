@@ -105,8 +105,7 @@ void printDictionary2(BTA* dictionary, int length){
     }
 }
 
-void printMenu(){
-	
+void printMenu(){	
 	printf("\n---DICTIONARY---");
     printf("\n1. Add\n");
     printf("2. Search\n");
@@ -114,9 +113,6 @@ void printMenu(){
     printf("4. Print\n");
     printf("5. Exit\n");
     printf("\nYour choice: ");
-    
-    
-    
 }
 
 int main(){

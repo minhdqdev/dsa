@@ -31,4 +31,4 @@ def preprocess(filename, output_filename=None):
             f.write(line)
 
 if __name__ == '__main__':
-    preprocess('bus_data.txt', 'output.txt')
+    preprocess('pre.txt', 'bus_data.txt')
