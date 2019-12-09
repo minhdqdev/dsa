@@ -9,12 +9,11 @@
 
 ## Installation and Usage
 ### Requirements
-Python 3 is required if you want to create your own dataset.
+This project requires Python 3 for preprocessing data.
 
 ```
-pip3 install -r requirements.txt
+pip3 install Unidecode
 ```
-
 ### Compile
 ```
 gcc
