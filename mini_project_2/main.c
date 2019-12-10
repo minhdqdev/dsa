@@ -219,6 +219,8 @@ void loadFromFile(Graph graph, const char *filename){
                         // get weight of edge
                         weight = atof(buffer+rindex+1);
 
+                        // printf("W: %d\n", weight);
+
                         addEdge(graph, v1, v2, weight);
 
                         addVertexToRoute(graph, route_id, v1);
@@ -323,6 +325,44 @@ double findShortestPath(Graph graph, int s, int t, int *path, int *length){
     return distance[t];
 }
 
+void getRoutesFromPath(Graph graph, int* output,int length){
+    for(int i=0; i<length-1; i++){
+        //int i=1;
+        printf("%s => %s:", getVertexNameById(graph, output[i]), getVertexNameById(graph, output[i+1]));
+        JRB node;
+        jrb_traverse(node, graph.routes){
+            JRB subTree = (JRB)jval_v(node->val);
+            JRB subNode1, subNode2;
+            int check1=0,check2=0;
+            jrb_traverse(subNode1, subTree){
+                if (jval_i(subNode1->key)== output[i]){
+                    check1=1;
+                }
+            }
+            jrb_traverse(subNode2, subTree){
+                if (jval_i(subNode2->key) == output[i+1]){
+                    check2=1;
+                }
+            }
+            int k1=getEdgeValue(graph, output[i+1], output[i]);
+            int k2=getEdgeValue(graph, output[i], output[i+1]);
+            //printf("%d", k1);
+            if (check1 ==1 && check2==1 && ((0<k1 && k1<INF) ||(0<k2 && k2<INF))) {
+                printf("  %s", jval_s(node->key));
+            }
+            /*printf("%d  %s \n",check1, jval_i(subNode1->key));
+            JRB subNode2= jrb_next(subNode1);
+            JRB subNode3= jrb_prev(subNode1);
+
+            if (check1 == 1 && (jval_i(subNode2->key)==output[i+1] || jval_i(subNode3->key)==output[i+1])) {
+                printf("%d -> %d: %s\n", output[i], output[i+1], jval_i(node->key));
+            }*/
+
+        }
+        printf("\n");
+    }
+}
+
 int main(){
     // load graph from file
     Graph g = createGraph();
@@ -406,6 +446,12 @@ int main(){
                             printf(" => %s", getVertexNameById(g, output[i]));	
                         }    
                     }	
+
+                    printf("\n");
+                    for(int i=0; i<length; i++) printf("%d  ", output[i]);
+                    printf("\n");
+                    
+                    getRoutesFromPath(g, output, length);
                 }
                 printf("\nFinished!\n");
 
@@ -414,7 +460,7 @@ int main(){
                 // output is the array of route
                 // Ex: 01 -> 5A -> 21A 
                 //int m = getRouteFromPath(g, input, output);
-//                 printf("Press ENTER to continue...\n");
+                // printf("Press ENTER to continue...\n");
                 break;
             }
             case 2:{

@@ -5,6 +5,7 @@ Reference:
 - https://gist.github.com/J2TEAM/9992744f15187ba51d46aecab21fd469
 '''
 from unidecode import unidecode
+from random import randint
 
 def preprocess(filename, output_filename=None):
     if output_filename is None:

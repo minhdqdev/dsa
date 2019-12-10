@@ -1,1088 +1,1054 @@
 # VERTICES
-27 : Ba La
-176 : Ba Trieu
-42 : Bac Co
-178 : Bach Mai
-158 : Bai do xe Cau Giay
+26 : Ba La
+160 : Ba Trieu
+40 : Bac Co
+162 : Bach Mai
+145 : Bai do xe Cau Giay
 0 : Ben xe Gia Lam
-55 : Ben xe Giap Bat
-63 : Ben xe Giap Bat (Quang truong Ben xe Giap Bat)
-223 : Ben xe My Dinh
-61 : Ben xe Nuoc Ngam
-29 : Ben xe Yen Nghia
-195 : Bo Ho
-201 : Buoi
+53 : Ben xe Giap Bat
+205 : Ben xe My Dinh
+59 : Ben xe Nuoc Ngam
+28 : Ben xe Yen Nghia
+178 : Bo Ho
+186 : Buoi
 4 : Cau Chuong Duong
-117 : Cau Dien
-229 : Cau Duong
-159 : Cau Giay
-174 : Cau Giay (duong duoi)
-138 : Cau Gie (bai xe khu vuc nga 3 duong noi thong giua QL1A va duong 75)
-272 : Cau Go
-270 : Cau Noi
-268 : Cau Noi- Co Nhue
-164 : Cau Thang Long
-66 : Cau Vinh Tuy
-23 : Cau vuot Nga tu So
-68 : Chu Huy Man
-49 : Chu Van An
-251 : Chua Boc
-219 : Chua Lang
-286 : Co Loa
-269 : Co Nhue
-120 : Cong lang Phu Dien
-148 : Cong ty Viet Tuyen)
-248 : Cong vien Nghia Do
-241 : Cong vien Thong Nhat
-261 : Cong vien nuoc Ho Tay
-281 : DTC xe buyt Hoang Quoc Viet
-292 : Da Phuc
-257 : Dai Ang
-64 : Dai La
-67 : Dam Quang Trung
-231 : Dang Phuc Thong
-249 : Dao Tan
-242 : De Gia Thuong
-191 : De Huu Hong
-170 : Diem dung xe buyt don tra khach (san do xe nha ga T2)
-173 : Diem trung chuyen Cau Giay
-160 : Diem trung chuyen Cau Giay (he truoc tuong rao Vuon thu Ha Noi)
-97 : Diem trung chuyen Long Bien
-276 : Diem trung chuyen xe buyt Hoang Quoc Viet
-47 : Dien Bien Phu
-256 : Dinh Cong
-187 : Dinh Tien Hoang
-134 : Do Xa
-237 : Doc La
-285 : Doc Van
-198 : Doi Can
-289 : Dong Anh
-183 : Dong My
-157 : Duong 429 (phia Tay)
-122 : Duong K1 Cau Dien
-220 : Duong Lang
-89 : Duong Linh Nam
-181 : Duong Ngoc Hoi
-71 : Duong Phuc Loi
-14 : Duong Thanh
-189 : Duong Vanh Dai 3
-287 : Duong cai tranh Quoc lo 3
-90 : Duong dan cau Thanh Tri
-166 : Duong duoi cau vuot Kim Chung
-156 : Duong truc huyen Phu Tuc, Hoang Long
-152 : Duong truc huyen Thao Chinh, Tan Dan
-169 : Duong vao san do nha ga T2, san bay Noi Bai
-119 : Ga Phu Dien
-56 : Giai Phong
-137 : Guot
-230 : Ha Huy Tap
-17 : Hai Ba Trung
-114 : Ham Nghi
-186 : Hang Bai
-11 : Hang Cot
-8 : Hang Dau
-13 : Hang Dieu
-12 : Hang Ga
-96 : Hang Muoi
-9 : Hang Than
-273 : Hang Thung
-95 : Hang Tre
-94 : Hang Voi
-125 : Ho Tung Mau
-116 : Ho Tung Mau -Quay dau tai phia truoc nghia trang Mai Dich -Ho Tung Mau
-209 : Ho Xuan Huong
-266 : Hoang Cong Chat
-207 : Hoang Hoa Tham
-107 : Hoang Minh Giam
-162 : Hoang Quoc Viet
-246 : Hoc vien Nong nghiep Viet Nam
-69 : Hoi Xa
-143 : Hong Van (Van La, Thuong Tin)
-217 : Huynh Thuc Khang
-19 : Kham Thien
-127 : Khu do thi Linh Dam
-204 : Khu lien co quan So nganh Ha Noi
-104 : Khuong Dinh
-128 : Kim Dong
-103 : Kim Giang
-205 : Kim Ma
-87 : Kim Nguu
-262 : Lac Long Quan
-213 : Lang
-216 : Lang Ha
-177 : Le Dai Hanh
-18 : Le Duan
-197 : Le Hong Phong
-196 : Le Thai To
-179 : Le Thanh Nghi
-44 : Le Thanh Tong
-259 : Le Trong Tan
-38 : Le Van Linh
-130 : Lien Ninh
-199 : Lieu Giai
-99 : Linh Dam (Khu do thi Linh Dam)
-86 : Lo Duc
-283 : Lo Su
-98 : Long Bien
-247 : Long Bien (Diem quay dau tai pho Hang Khoai)
-58 : Long Bien (Diem quay dau truoc pho Hang Khoai)
-225 : Long Bien (doi dien Doi CSGT so 1 Ha Noi
-236 : Long Bien (duong danh rieng cho xe buyt)
-79 : Long Bien-quay dau tai doi dien pho Hang Than-Yen Phu- Diem trung chuyen Long Bien
-81 : Ly Thai To
-175 : Ly Thuong Kiet
-59 : Ly Thuong Kiet -Le Duan
-109 : Mac Thai Tong
-65 : Minh Khai
-233 : Minh Khai (Tu Son)
-235 : Minh Khai (Tu Son)- Quay dau tai 38 duong Minh Khai
-60 : Nga 3 Duoi Ca
-212 : Nga Tu So
-145 : Nga ba Do Xa
-30 : Nga tu So
-77 : Nga tu Vong
-73 : Ngach 195/9 Phuc Loi
-135 : Nghe
-102 : Nghiem Xuan Yem
-278 : Ngo 12 Pham Van Dong
-123 : Ngo 172 Phu Dien
-72 : Ngo 193 Phuc loi
-74 : Ngo 195 Phuc Loi
+112 : Cau Dien
+209 : Cau Duong
+146 : Cau Giay
+130 : Cau Gie
+131 : Cau Gie (bai xe khu vuc nga 3 duong noi thong giua QL1A va duong 75)
+248 : Cau Go
+246 : Cau Noi
+244 : Cau Noi- Co Nhue
+151 : Cau Thang Long
+63 : Cau Vinh Tuy
+86 : Cau Voi
+22 : Cau vuot Nga tu So
+65 : Chu Huy Man
+47 : Chu Van An
+230 : Chua Boc
+201 : Chua Lang
+260 : Co Loa
+245 : Co Nhue
+115 : Cong lang Phu Dien
+227 : Cong vien Nghia Do
+220 : Cong vien Thong Nhat
+238 : Cong vien nuoc Ho Tay
+255 : DTC xe buyt Hoang Quoc Viet
+265 : Da Phuc
+236 : Dai Ang
+61 : Dai La
+64 : Dam Quang Trung
+211 : Dang Phuc Thong
+228 : Dao Tan
+222 : De Gia Thuong
+175 : De Huu Hong
+184 : De La Thanh
+156 : Diem dung xe buyt don tra khach (san do xe nha ga T2)
+147 : Diem trung chuyen Cau Giay
+76 : Diem trung chuyen Long Bien
+252 : Diem trung chuyen xe buyt Hoang Quoc Viet
+45 : Dien Bien Phu
+235 : Dinh Cong
+171 : Dinh Tien Hoang
+126 : Do Xa
+216 : Doc La
+259 : Doc Van
+181 : Doi Can
+262 : Dong Anh
+167 : Dong My
+144 : Duong 429 (phia Tay)
+117 : Duong K1 Cau Dien
+202 : Duong Lang
+88 : Duong Linh Nam
+165 : Duong Ngoc Hoi
+68 : Duong Phuc Loi
+13 : Duong Thanh
+173 : Duong Vanh Dai 3
+261 : Duong cai tranh Quoc lo 3
+89 : Duong dan cau Thanh Tri
+153 : Duong duoi cau vuot Kim Chung
+143 : Duong truc huyen Phu Tuc, Hoang Long
+140 : Duong truc huyen Thao Chinh, Tan Dan
+155 : Duong vao san do nha ga T2, san bay Noi Bai
+114 : Ga Phu Dien
+54 : Giai Phong
+129 : Guot
+210 : Ha Huy Tap
+16 : Hai Ba Trung
+109 : Ham Nghi
+170 : Hang Bai
+10 : Hang Cot
+7 : Hang Dau
+12 : Hang Dieu
+11 : Hang Ga
+94 : Hang Muoi
+8 : Hang Than
+249 : Hang Thung
+93 : Hang Tre
+92 : Hang Voi
+111 : Ho Tung Mau
+193 : Ho Xuan Huong
+242 : Hoang Cong Chat
+191 : Hoang Hoa Tham
+102 : Hoang Minh Giam
+149 : Hoang Quoc Viet
+226 : Hoc vien Nong nghiep Viet Nam
+66 : Hoi Xa
+135 : Hong Van (Van La, Thuong Tin)
+200 : Huynh Thuc Khang
+18 : Kham Thien
+119 : Khu do thi Linh Dam
+189 : Khu lien co quan So nganh Ha Noi
+100 : Khuong Dinh
+120 : Kim Dong
+99 : Kim Giang
+185 : Kim Ma
+84 : Kim Nguu
+239 : Lac Long Quan
+196 : Lang
+199 : Lang Ha
+161 : Le Dai Hanh
+17 : Le Duan
+180 : Le Hong Phong
+179 : Le Thai To
+163 : Le Thanh Nghi
+42 : Le Thanh Tong
+233 : Le Trong Tan
+37 : Le Van Linh
+122 : Lien Ninh
+182 : Lieu Giai
+95 : Linh Dam (Khu do thi Linh Dam)
+83 : Lo Duc
+257 : Lo Su
+75 : Long Bien
+221 : Long Bien (Diem quay dau tai pho Hang Khoai)
+56 : Long Bien (Diem quay dau truoc pho Hang Khoai)
+207 : Long Bien (doi dien Doi CSGT so 1 Ha Noi)
+215 : Long Bien (duong danh rieng cho xe buyt)
+78 : Ly Thai To
+159 : Ly Thuong Kiet
+57 : Ly Thuong Kiet -Le Duan
+104 : Mac Thai Tong
+62 : Minh Khai
+214 : Minh Khai (Tu Son)
+58 : Nga 3 Duoi Ca
+136 : Nga ba Do Xa
+29 : Nga tu So
+74 : Nga tu Vong
+70 : Ngach 195/9 Phuc Loi
+127 : Nghe
+98 : Nghiem Xuan Yem
+253 : Ngo 12 Pham Van Dong
+118 : Ngo 172 Phu Dien
+69 : Ngo 193 Phuc loi
+71 : Ngo 195 Phuc Loi
 1 : Ngo Gia Kham
-228 : Ngo Gia Tu
-82 : Ngo Quyen
-36 : Ngo Tram
-245 : Ngo Xuan Quang
-208 : Ngoc Ha
-62 : Ngoc Hoi
+208 : Ngo Gia Tu
+79 : Ngo Quyen
+35 : Ngo Tram
+225 : Ngo Xuan Quang
+192 : Ngoc Ha
+60 : Ngoc Hoi
 2 : Ngoc Lam
-182 : Ngu Hiep
-210 : Nguyen Binh Khiem
-108 : Nguyen Chanh
-218 : Nguyen Chi Thanh
-200 : Nguyen Chi Thanh -De La Thanh-Kim Ma- Diem trung chuyen Cau Giay
-115 : Nguyen Co Thach
-224 : Nguyen Du
-244 : Nguyen Duc Thuan
-100 : Nguyen Duy Trinh
-113 : Nguyen Hoang
-203 : Nguyen Hoang Ton
-80 : Nguyen Huu Huan
-101 : Nguyen Huu Tho
-171 : Nguyen Khanh Toan
-290 : Nguyen Khe
-21 : Nguyen Luong Bang
-41 : Nguyen Son
-88 : Nguyen Tam Trinh-Cau Voi- Tam Trinh
-93 : Nguyen Tam Trinh-re phai duong Minh Khai-Quay dau tai diem mo doi dien 400 Minh Khai-Minh Khai
-51 : Nguyen Thai Hoc
-31 : Nguyen Thuong Hien
-24 : Nguyen Trai
-106 : Nguyen Tuan
+166 : Ngu Hiep
+194 : Nguyen Binh Khiem
+103 : Nguyen Chanh
+183 : Nguyen Chi Thanh
+110 : Nguyen Co Thach
+206 : Nguyen Du
+224 : Nguyen Duc Thuan
+96 : Nguyen Duy Trinh
+108 : Nguyen Hoang
+188 : Nguyen Hoang Ton
+77 : Nguyen Huu Huan
+97 : Nguyen Huu Tho
+157 : Nguyen Khanh Toan
+263 : Nguyen Khe
+20 : Nguyen Luong Bang
+39 : Nguyen Son
+85 : Nguyen Tam Trinh
+49 : Nguyen Thai Hoc
+30 : Nguyen Thuong Hien
+23 : Nguyen Trai
+101 : Nguyen Tuan
 3 : Nguyen Van Cu
-161 : Nguyen Van Huyen
-243 : Nguyen Van Linh
-238 : Ninh Hiep
-20 : O Cho Dua
-222 : Pham Hung
-111 : Pham Van Bach
-163 : Pham Van Dong
-265 : Pham Van Dong-quay dau tai diem mo doi dien 158 Pham Van Dong-Pham Van Dong
-267 : Phan Ba Vanh
-52 : Phan Boi Chau
-53 : Phan Chu Trinh
-40 : Phan Dinh Phung
-91 : Phap Van
-185 : Pho Hue
-293 : Pho Ni
-118 : Phu Dien
-121 : Phu Dien (gan duong Trai Ga)
-15 : Phu Doan
-239 : Phu Dong
-291 : Phu Lo
-147 : Phu Minh (Phu Xuyen
-155 : Phu Tuc (canh nha van hoa thon Luu Dong)
-75 : Phuc Loi (doi dien truong THPT Phuc Loi)
-37 : Phung Hung
-39 : Phung Hung (duong trong)
-131 : Quan Ganh
-35 : Quan Su
-10 : Quan Thanh
-45 : Quang Trung
-26 : Quang Trung (Ha Dong)
-34 : Quang truong 1-5
-184 : Quang truong Ben xe Giap Bat
-258 : Quang truong ben xe Giap Bat
-124 : Quay dau doi dien 30 Cau Dien
-105 : Quay dau tai 177 Nguyen Trai
-167 : Quay dau tai diem mo (doi dien cong ty dich vu hang hoa hang khong)
-227 : Quay dau tai doi dien 92 Yen Phu
-129 : Quoc Lo 1
-139 : Quoc Lo 1A
-284 : Quoc Lo 3
-149 : Quoc lo 1
-288 : Quoc lo 3
-28 : Quoc lo 6
-150 : Re phai vao duong truc huyen Thao Chinh, Tan Dan
-154 : Re trai duong truc huyen Phu Tuc, Hoang Long
-92 : Re trai tai nut giao duong vanh dai 3 va duong Ngoc Hoi (gan Ben xe Nuoc Ngam)
-168 : San bay Noi Bai (San do P2, nha ga T1)
-151 : Tan Dan (doi dien cong thong Dai Nghiep, xa Tan Dan, huyen Phu Xuyen)
-279 : Tan Xuan
-84 : Tang Bat Ho
-22 : Tay Son
-250 : Thai Ha
-215 : Thai Thinh
-136 : Thi tran Phu Xuyen
-132 : Thi tran Thuong Tin
-141 : Thuong Tin
-144 : Thuong Tin( Duong Tran Lu)
-275 : Thuy Khue
-133 : Tia
-263 : To Hieu
-50 : Ton Duc Thang
-112 : Ton That Thuyet
-252 : Ton That Tung
-180 : Tran Dai Nghia
-172 : Tran Dang Ninh
-255 : Tran Dien
-33 : Tran Hung Dao
-43 : Tran Khanh Du
-188 : Tran Nguyen Han
-194 : Tran Nguyen Han- Hang Tre
-211 : Tran Nhan Tong
+148 : Nguyen Van Huyen
+223 : Nguyen Van Linh
+217 : Ninh Hiep
+19 : O Cho Dua
+204 : Pham Hung
+106 : Pham Van Bach
+150 : Pham Van Dong
+243 : Phan Ba Vanh
+50 : Phan Boi Chau
+51 : Phan Chu Trinh
+38 : Phan Dinh Phung
+90 : Phap Van
+169 : Pho Hue
+266 : Pho Ni
+113 : Phu Dien
+116 : Phu Dien (gan duong Trai Ga)
+14 : Phu Doan
+218 : Phu Dong
+264 : Phu Lo
+138 : Phu Minh
+142 : Phu Tuc (canh nha van hoa thon Luu Dong)
+72 : Phuc Loi (doi dien truong THPT Phuc Loi)
+36 : Phung Hung
+123 : Quan Ganh
+34 : Quan Su
+9 : Quan Thanh
+43 : Quang Trung
+25 : Quang Trung (Ha Dong)
+33 : Quang truong 1-5
+168 : Quang truong Ben xe Giap Bat
+237 : Quang truong ben xe Giap Bat
+132 : Quoc Lo 1A
+121 : Quoc lo 1
+258 : Quoc lo 3
+27 : Quoc lo 6
+154 : San bay Noi Bai (San do P2, nha ga T1)
+87 : Tam Trinh
+139 : Tan Dan (doi dien cong thong Dai Nghiep, xa Tan Dan, huyen Phu Xuyen)
+254 : Tan Xuan
+81 : Tang Bat Ho
+21 : Tay Son
+229 : Thai Ha
+198 : Thai Thinh
+128 : Thi tran Phu Xuyen
+124 : Thi tran Thuong Tin
+133 : Thuong Tin
+251 : Thuy Khue
+125 : Tia
+240 : To Hieu
+48 : Ton Duc Thang
+107 : Ton That Thuyet
+231 : Ton That Tung
+164 : Tran Dai Nghia
+158 : Tran Dang Ninh
+234 : Tran Dien
+32 : Tran Hung Dao
+41 : Tran Khanh Du
+172 : Tran Nguyen Han
+195 : Tran Nhan Tong
 5 : Tran Nhat Duat
-48 : Tran Phu
-25 : Tran Phu (Ha Dong)
-232 : Tran Phu (Tu Son)
-57 : Tran Quang Khai
-264 : Tran Quoc Hoan
-221 : Tran Thai Tong
-83 : Tran Thanh Tong
-193 : Tran Thu Do
-46 : Trang Thi
-54 : Trang Tien
-16 : Trieu Quoc Dat
-110 : Trung Kinh
-240 : Trung Mau (Gia Lam)
-76 : Truong Chinh
-253 : Truong Trinh
-190 : Tu Hiep
-234 : Tu Son (Cong benh vien da khoa Tu Son)
-206 : Van Cao
-192 : Van Phuc
-202 : Vo Chi Cong
-165 : Vo Van Kiet
-271 : Vong xuyen Buoi, Hoang Quoc Viet
-70 : Vu Xuan Thieu
-85 : Yecxanh
-214 : Yen Lang
+46 : Tran Phu
+24 : Tran Phu (Ha Dong)
+212 : Tran Phu (Tu Son)
+55 : Tran Quang Khai
+241 : Tran Quoc Hoan
+203 : Tran Thai Tong
+80 : Tran Thanh Tong
+177 : Tran Thu Do
+44 : Trang Thi
+52 : Trang Tien
+15 : Trieu Quoc Dat
+105 : Trung Kinh
+219 : Trung Mau (Gia Lam)
+73 : Truong Chinh
+232 : Truong Trinh
+174 : Tu Hiep
+213 : Tu Son (Cong benh vien da khoa Tu Son)
+190 : Van Cao
+176 : Van Phuc
+187 : Vo Chi Cong
+152 : Vo Van Kiet
+247 : Vong xuyen Buoi, Hoang Quoc Viet
+67 : Vu Xuan Thieu
+82 : Yecxanh
+197 : Yen Lang
 6 : Yen Phu
-274 : Yen Phu (quay dau tai so nha 92 Yen Phu)
-32 : Yet Kieu
-282 : cau vuot Hoang Hoa Tham
-142 : duong 427
-146 : duong 429 (phia Dong)
-153 : duong 429 (phia Tay)
-140 : quay dau tai diem mo
-254 : quay dau tai diem mo 266 Truong Chinh-Truong Chinh- Le Trong Tan
-260 : quay dau tai diem mo doi dien 173B Truong Chinh
-277 : quay dau tai diem mo doi dien ciputra (gan chan cau Thang Long)
-78 : quay dau tai diem mo doi dien cong ty ABB
-280 : quay dau tai diem mo doi dien truong trung cap nghe GTVT Thang Long-Tan Xuan-Pham Van Dong-quay dau tai diem mo doi dien 158 Pham Van Dong
-7 : quay dau tai diem trung chuyen Long Bien
-126 : quay dau tai nga 4 Khuat Duy Tien, Nguyen Trai
-226 : so 3 Tran Nhat Duat)
+250 : Yen Phu (quay dau tai so nha 92 Yen Phu)
+31 : Yet Kieu
+256 : cau vuot Hoang Hoa Tham
+134 : duong 427
+137 : duong 429 (phia Dong)
+141 : duong 429 (phia Tay)
+91 : re phai duong Minh Khai
 # ROUTE_ID
 01
 ## EDGES
-0 1 1
-1 2 1
-2 3 1
-3 4 1
-4 5 1
-5 6 1
-6 7 1
-7 6 1
-6 8 1
-8 9 1
-9 10 1
-10 11 1
-11 12 1
-12 13 1
-13 14 1
-14 15 1
-15 16 1
-16 17 1
-17 18 1
-18 19 1
-19 20 1
-20 21 1
-21 22 1
-22 23 1
-23 24 1
-24 25 1
-25 26 1
-26 27 1
-27 28 1
-28 29 1
-29 28 1
-28 27 1
-27 26 1
-26 25 1
-25 24 1
-24 30 1
-30 22 1
-22 21 1
-21 19 1
-19 31 1
-31 32 1
-32 33 1
-33 34 1
-34 35 1
-35 36 1
-36 14 1
-14 37 1
-37 38 1
-38 39 1
-39 40 1
-40 8 1
-8 5 1
-5 4 1
-4 3 1
-3 41 1
-41 2 1
-2 1 1
-1 0 1
+0 1 5
+1 2 8
+2 3 3
+3 4 3
+4 5 7
+5 6 8
+6 6 4
+6 7 3
+7 8 7
+8 9 6
+9 10 5
+10 11 6
+11 12 5
+12 13 8
+13 14 6
+14 15 5
+15 16 8
+16 17 6
+17 18 6
+18 19 5
+19 20 8
+20 21 6
+21 22 4
+22 23 8
+23 24 4
+24 25 7
+25 26 6
+26 27 3
+27 28 7
+28 27 4
+27 26 5
+26 25 7
+25 24 8
+24 23 6
+23 29 6
+29 21 6
+21 20 3
+20 18 4
+18 30 4
+30 31 6
+31 32 4
+32 33 3
+33 34 7
+34 35 4
+35 13 8
+13 36 8
+36 37 5
+37 36 6
+36 38 5
+38 7 8
+7 5 5
+5 4 7
+4 3 6
+3 39 6
+39 2 8
+2 1 7
+1 0 5
 # ROUTE_ID
 02
 ## EDGES
-42 43 1
-43 33 1
-33 44 1
-44 17 1
-17 45 1
-45 46 1
-46 47 1
-47 48 1
-48 49 1
-49 50 1
-50 21 1
-21 22 1
-22 30 1
-30 24 1
-24 25 1
-25 26 1
-26 27 1
-27 28 1
-28 29 1
-29 28 1
-28 27 1
-27 26 1
-26 25 1
-25 24 1
-24 30 1
-30 22 1
-22 21 1
-21 50 1
-50 51 1
-51 52 1
-52 17 1
-17 53 1
-53 54 1
-54 42 1
+40 41 6
+41 32 4
+32 42 5
+42 16 3
+16 43 8
+43 44 5
+44 45 8
+45 46 6
+46 47 3
+47 48 6
+48 20 7
+20 21 5
+21 29 8
+29 23 5
+23 24 4
+24 25 3
+25 26 6
+26 27 5
+27 28 6
+28 27 4
+27 26 6
+26 25 5
+25 24 4
+24 23 6
+23 29 8
+29 21 8
+21 20 3
+20 48 3
+48 49 4
+49 50 3
+50 16 7
+16 51 3
+51 52 8
+52 40 5
 # ROUTE_ID
 03A
 ## EDGES
-55 56 1
-56 18 1
-18 31 1
-31 32 1
-32 33 1
-33 43 1
-43 57 1
-57 5 1
-5 58 1
-58 5 1
-5 4 1
-4 3 1
-3 41 1
-41 2 1
-2 1 1
-1 0 1
-0 1 1
-1 2 1
-2 3 1
-3 4 1
-4 5 1
-5 58 1
-58 5 1
-5 57 1
-57 43 1
-43 33 1
-33 35 1
-35 59 1
-59 56 1
-56 60 1
-60 55 1
+53 54 8
+54 17 8
+17 30 6
+30 31 8
+31 32 3
+32 41 7
+41 55 3
+55 5 4
+5 56 5
+56 5 5
+5 4 4
+4 3 5
+3 39 8
+39 2 3
+2 1 7
+1 0 6
+0 1 7
+1 2 6
+2 3 8
+3 4 7
+4 5 8
+5 56 8
+56 5 7
+5 55 8
+55 41 4
+41 32 4
+32 34 5
+34 57 7
+57 54 3
+54 58 5
+58 53 4
 # ROUTE_ID
 03B
 ## EDGES
-61 62 1
-62 56 1
-56 63 1
-63 56 1
-56 64 1
-64 65 1
-65 66 1
-66 67 1
-67 68 1
-68 69 1
-69 70 1
-70 71 1
-71 72 1
-72 73 1
-73 74 1
-74 75 1
-75 71 1
-71 70 1
-70 69 1
-69 68 1
-68 67 1
-67 66 1
-66 65 1
-65 64 1
-64 76 1
-76 77 1
-77 56 1
-56 62 1
-62 78 1
-78 62 1
-62 61 1
+59 60 7
+60 54 5
+54 53 3
+53 54 8
+54 61 3
+61 62 4
+62 63 7
+63 64 3
+64 65 6
+65 66 6
+66 67 3
+67 68 5
+68 69 6
+69 70 7
+70 71 8
+71 72 8
+72 68 8
+68 67 8
+67 66 8
+66 65 4
+65 64 3
+64 63 6
+63 62 6
+62 61 6
+61 73 8
+73 74 8
+74 54 8
+54 60 7
+60 60 5
+60 59 6
 # ROUTE_ID
 04
 ## EDGES
-79 5 1
-5 80 1
-80 81 1
-81 82 1
-82 17 1
-17 44 1
-44 83 1
-83 84 1
-84 85 1
-85 86 1
-86 87 1
-87 88 1
-88 89 1
-89 90 1
-90 91 1
-91 92 1
-92 62 1
-62 61 1
-61 56 1
-56 91 1
-91 90 1
-90 89 1
-89 93 1
-93 87 1
-87 86 1
-86 53 1
-53 81 1
-81 82 1
-82 94 1
-94 95 1
-95 96 1
-96 5 1
-5 97 1
-97 6 1
-6 98 1
+75 6 6
+6 76 6
+76 5 8
+5 77 8
+77 78 5
+78 79 7
+79 16 8
+16 42 5
+42 80 5
+80 81 5
+81 82 3
+82 83 5
+83 84 7
+84 85 7
+85 86 5
+86 87 3
+87 88 8
+88 89 7
+89 90 4
+90 60 5
+60 59 7
+59 54 7
+54 90 3
+90 89 4
+89 88 7
+88 85 5
+85 91 8
+91 62 5
+62 84 8
+84 83 6
+83 51 5
+51 78 8
+78 79 8
+79 92 5
+92 93 5
+93 94 4
+94 5 4
+5 76 8
+76 6 5
+6 75 7
 # ROUTE_ID
 05
 ## EDGES
-99 100 1
-100 101 1
-101 102 1
-102 103 1
-103 104 1
-104 24 1
-24 105 1
-105 24 1
-24 106 1
-106 107 1
-107 108 1
-108 109 1
-109 110 1
-110 111 1
-111 112 1
-112 113 1
-113 114 1
-114 115 1
-115 116 1
-116 117 1
-117 118 1
-118 119 1
-119 120 1
-120 121 1
-121 120 1
-120 119 1
-119 122 1
-122 123 1
-123 118 1
-118 117 1
-117 124 1
-124 125 1
-125 115 1
-115 114 1
-114 113 1
-113 112 1
-112 111 1
-111 110 1
-110 109 1
-109 108 1
-108 107 1
-107 106 1
-106 24 1
-24 126 1
-126 24 1
-24 104 1
-104 103 1
-103 102 1
-102 101 1
-101 100 1
-100 127 1
+95 96 4
+96 97 7
+97 98 3
+98 99 8
+99 100 8
+100 23 5
+23 23 8
+23 101 7
+101 102 6
+102 103 3
+103 104 8
+104 105 3
+105 106 8
+106 107 4
+107 108 5
+108 109 5
+109 110 8
+110 111 5
+111 111 3
+111 112 5
+112 113 8
+113 114 6
+114 115 6
+115 113 6
+116 115 6
+115 114 3
+114 117 8
+117 118 6
+118 113 8
+113 112 6
+112 111 6
+111 110 3
+110 109 5
+109 108 4
+108 107 8
+107 106 5
+106 105 4
+105 104 8
+104 103 8
+103 102 4
+102 101 3
+101 23 3
+23 23 5
+23 100 6
+100 99 6
+99 98 8
+98 97 5
+97 96 3
+96 119 3
 # ROUTE_ID
 06A
 ## EDGES
-55 56 1
-56 128 1
-128 56 1
-56 62 1
-62 129 1
-129 130 1
-130 131 1
-131 132 1
-132 133 1
-133 134 1
-134 135 1
-135 136 1
-136 137 1
-137 138 1
-138 139 1
-139 137 1
-137 136 1
-136 135 1
-135 134 1
-134 133 1
-133 132 1
-132 131 1
-131 130 1
-130 62 1
-62 56 1
-56 55 1
+53 54 5
+54 120 6
+120 54 4
+54 60 3
+60 121 7
+121 122 4
+122 123 3
+123 124 3
+124 125 3
+125 126 6
+126 127 3
+127 128 3
+128 129 5
+129 130 3
+131 132 7
+132 129 5
+129 128 8
+128 127 7
+127 126 8
+126 125 3
+125 124 6
+124 123 3
+123 122 4
+122 60 3
+60 54 6
+54 53 4
 # ROUTE_ID
 06B
 ## EDGES
-55 56 1
-56 128 1
-128 140 1
-140 128 1
-128 56 1
-56 62 1
-62 141 1
-141 142 1
-142 143 1
-143 142 1
-142 144 1
-144 62 1
-62 56 1
-56 55 1
+53 54 4
+54 120 6
+120 120 5
+120 54 6
+54 60 6
+60 133 7
+133 134 3
+134 135 5
+135 134 7
+134 133 7
+133 60 6
+60 54 6
+54 53 8
 # ROUTE_ID
 06C
 ## EDGES
-55 56 1
-56 128 1
-128 140 1
-140 128 1
-128 56 1
-56 62 1
-62 141 1
-141 133 1
-133 145 1
-145 146 1
-146 147 1
-147 148 1
-147 148 1
-148 146 1
-146 145 1
-145 133 1
-133 141 1
-141 62 1
-62 56 1
-56 55 1
+53 54 7
+54 120 8
+120 120 6
+120 54 6
+54 60 7
+60 133 4
+133 125 5
+125 136 6
+136 137 6
+137 138 3
+138 137 6
+137 136 5
+136 125 8
+125 133 3
+133 60 3
+60 54 8
+54 53 3
 # ROUTE_ID
 06D
 ## EDGES
-55 56 1
-56 128 1
-128 140 1
-140 128 1
-128 56 1
-56 62 1
-62 141 1
-141 133 1
-133 149 1
-149 150 1
-150 151 1
-151 152 1
-152 149 1
-149 133 1
-133 141 1
-141 62 1
-62 56 1
-56 55 1
+53 54 3
+54 120 5
+120 120 6
+120 54 7
+54 60 6
+60 133 5
+133 125 5
+125 121 7
+121 139 4
+139 140 3
+140 121 8
+121 125 4
+125 133 4
+133 60 8
+60 54 6
+54 53 6
 # ROUTE_ID
 06E
 ## EDGES
-55 56 1
-56 128 1
-128 140 1
-140 128 1
-128 56 1
-56 62 1
-62 141 1
-141 153 1
-153 154 1
-154 155 1
-155 156 1
-156 157 1
-157 133 1
-133 141 1
-141 62 1
-62 56 1
-56 55 1
+53 54 6
+54 120 6
+120 120 8
+120 54 8
+54 60 3
+60 133 6
+133 141 6
+141 142 4
+142 143 3
+143 144 3
+144 125 4
+125 133 3
+133 60 8
+60 54 3
+54 53 8
 # ROUTE_ID
 07
 ## EDGES
-158 159 1
-159 160 1
-160 159 1
-159 161 1
-161 162 1
-162 163 1
-163 164 1
-164 165 1
-165 166 1
-166 165 1
-165 167 1
-167 165 1
-165 168 1
-168 165 1
-165 169 1
-169 170 1
-170 165 1
-165 164 1
-164 163 1
-163 162 1
-162 161 1
-161 171 1
-171 172 1
-172 159 1
-159 173 1
-173 174 1
-174 158 1
+145 146 6
+146 147 5
+147 146 6
+146 148 8
+148 149 6
+149 150 4
+150 151 4
+151 152 8
+152 153 6
+153 152 4
+152 152 8
+152 154 8
+154 152 4
+152 155 6
+155 156 4
+156 152 4
+152 151 3
+151 150 4
+150 149 8
+149 148 5
+148 157 4
+157 158 4
+158 146 8
+146 147 6
+147 146 4
+146 145 6
 # ROUTE_ID
 08A
 ## EDGES
-98 6 1
-6 97 1
-97 5 1
-5 80 1
-80 81 1
-81 82 1
-82 175 1
-175 176 1
-176 177 1
-177 178 1
-178 179 1
-179 180 1
-180 64 1
-64 56 1
-56 181 1
-181 182 1
-182 183 1
-183 182 1
-182 181 1
-181 56 1
-56 184 1
-184 56 1
-56 76 1
-76 64 1
-64 180 1
-180 179 1
-179 178 1
-178 185 1
-185 186 1
-186 187 1
-187 188 1
-188 82 1
-82 95 1
-95 96 1
-96 5 1
-5 97 1
-97 6 1
-6 98 1
+75 6 6
+6 76 4
+76 5 5
+5 77 7
+77 78 5
+78 79 6
+79 159 8
+159 160 5
+160 161 8
+161 162 7
+162 163 3
+163 164 3
+164 61 7
+61 54 4
+54 165 4
+165 166 8
+166 167 8
+167 166 5
+166 165 6
+165 54 4
+54 168 7
+168 54 3
+54 73 7
+73 61 6
+61 164 6
+164 163 6
+163 162 3
+162 169 8
+169 170 6
+170 171 7
+171 172 4
+172 79 3
+79 93 5
+93 94 8
+94 5 8
+5 76 3
+76 6 3
+6 75 4
 # ROUTE_ID
 08B
 ## EDGES
-98 80 1
-80 81 1
-81 82 1
-82 175 1
-175 176 1
-176 177 1
-177 178 1
-178 179 1
-179 64 1
-64 56 1
-56 189 1
-189 190 1
-190 191 1
-191 192 1
-192 191 1
-191 190 1
-190 193 1
-193 62 1
-62 56 1
-56 64 1
-64 179 1
-179 178 1
-178 185 1
-185 186 1
-186 194 1
-194 5 1
-5 98 1
+75 77 7
+77 78 6
+78 79 4
+79 159 4
+159 160 3
+160 161 5
+161 162 3
+162 163 5
+163 61 8
+61 54 7
+54 173 4
+173 174 6
+174 175 7
+175 176 5
+176 175 7
+175 174 7
+174 177 4
+177 60 8
+60 54 7
+54 61 7
+61 163 8
+163 162 6
+162 169 6
+169 170 6
+170 172 4
+172 93 6
+93 5 5
+5 75 5
 # ROUTE_ID
 09A
 ## EDGES
-195 196 1
-196 46 1
-46 47 1
-47 197 1
-197 198 1
-198 199 1
-199 200 1
-200 201 1
-201 202 1
-202 203 1
-203 204 1
-204 203 1
-203 202 1
-202 201 1
-201 159 1
-159 205 1
-205 199 1
-199 206 1
-206 207 1
-207 208 1
-208 197 1
-197 47 1
-47 52 1
-52 17 1
-17 186 1
-186 187 1
-187 195 1
+178 179 7
+179 44 8
+44 45 4
+45 180 4
+180 181 3
+181 182 3
+182 183 7
+183 184 4
+184 185 6
+185 147 5
+147 186 7
+186 187 6
+187 188 7
+188 189 5
+189 188 3
+188 187 3
+187 186 7
+186 146 6
+146 185 6
+185 182 8
+182 190 3
+190 191 8
+191 192 5
+192 180 5
+180 45 3
+45 50 5
+50 16 4
+16 170 8
+170 171 3
+171 178 4
 # ROUTE_ID
 09B
 ## EDGES
-195 196 1
-196 176 1
-176 209 1
-209 210 1
-210 211 1
-211 18 1
-18 19 1
-19 21 1
-21 22 1
-22 212 1
-212 213 1
-213 214 1
-214 215 1
-215 216 1
-216 217 1
-217 218 1
-218 219 1
-219 220 1
-220 159 1
-159 221 1
-221 112 1
-112 222 1
-222 223 1
-223 222 1
-222 112 1
-112 221 1
-221 159 1
-159 220 1
-220 219 1
-219 218 1
-218 217 1
-217 216 1
-216 213 1
-213 212 1
-212 22 1
-22 21 1
-21 19 1
-19 18 1
-18 211 1
-211 45 1
-45 224 1
-224 185 1
-185 186 1
-186 187 1
-187 195 1
+178 179 7
+179 160 8
+160 193 6
+193 194 4
+194 195 3
+195 17 4
+17 18 4
+18 20 5
+20 21 7
+21 29 3
+29 196 6
+196 197 4
+197 198 3
+198 199 8
+199 200 4
+200 183 6
+183 201 3
+201 202 7
+202 146 6
+146 203 3
+203 107 3
+107 204 5
+204 205 8
+205 204 6
+204 107 6
+107 203 5
+203 146 5
+146 202 4
+202 201 5
+201 183 7
+183 200 6
+200 199 4
+199 196 7
+196 29 5
+29 21 6
+21 20 7
+20 18 6
+18 17 6
+17 195 7
+195 43 8
+43 206 4
+206 169 5
+169 170 8
+170 171 5
+171 178 4
 # ROUTE_ID
 10A
 ## EDGES
-225 226 1
-226 5 1
-5 6 1
-6 227 1
-227 97 1
-97 5 1
-5 4 1
-4 3 1
-3 228 1
-228 229 1
-229 230 1
-230 231 1
-231 232 1
-232 233 1
-233 234 1
-234 235 1
-235 232 1
-232 231 1
-231 230 1
-230 229 1
-229 228 1
-228 3 1
-3 4 1
-4 5 1
-5 6 1
-6 97 1
-97 6 1
-6 227 1
-227 5 1
-5 225 1
-225 226 1
+207 5 5
+5 6 4
+6 76 7
+76 5 5
+5 4 7
+4 3 6
+3 208 7
+208 209 7
+209 210 7
+210 211 8
+211 212 6
+212 62 6
+62 213 4
+213 214 3
+214 212 5
+212 211 8
+211 210 3
+210 209 5
+209 208 8
+208 3 5
+3 4 7
+4 5 6
+5 6 5
+6 76 5
+76 6 3
+6 5 6
+5 207 4
 # ROUTE_ID
 10B
 ## EDGES
-236 6 1
-6 97 1
-97 5 1
-5 4 1
-4 3 1
-3 228 1
-228 229 1
-229 230 1
-230 231 1
-231 237 1
-237 238 1
-238 239 1
-239 240 1
-240 239 1
-239 238 1
-238 237 1
-237 231 1
-231 230 1
-230 229 1
-229 228 1
-228 3 1
-3 4 1
-4 5 1
-5 97 1
-97 6 1
-6 98 1
+215 6 7
+6 76 7
+76 5 3
+5 4 8
+4 3 6
+3 208 5
+208 209 3
+209 210 8
+210 211 7
+211 216 8
+216 217 4
+217 218 5
+218 219 8
+219 218 4
+218 217 4
+217 216 8
+216 211 8
+211 210 6
+210 209 8
+209 208 6
+208 3 8
+3 4 3
+4 5 8
+5 76 8
+76 6 3
+6 75 6
 # ROUTE_ID
 11
 ## EDGES
-241 211 1
-211 45 1
-45 33 1
-33 53 1
-53 81 1
-81 82 1
-82 94 1
-94 95 1
-95 96 1
-96 58 1
-58 5 1
-5 4 1
-4 242 1
-242 2 1
-2 3 1
-3 243 1
-243 244 1
-244 245 1
-245 246 1
-246 245 1
-245 244 1
-244 243 1
-243 3 1
-3 1 1
-1 0 1
-0 1 1
-1 2 1
-2 242 1
-242 4 1
-4 5 1
-5 247 1
-247 5 1
-5 80 1
-80 81 1
-81 82 1
-82 33 1
-33 35 1
-35 175 1
-175 18 1
-18 211 1
-211 241 1
+220 195 4
+195 43 3
+43 32 3
+32 51 3
+51 78 4
+78 79 4
+79 92 8
+92 93 4
+93 94 6
+94 221 8
+221 5 3
+5 4 6
+4 222 4
+222 2 7
+2 3 3
+3 223 5
+223 224 5
+224 225 6
+225 226 7
+226 225 3
+225 224 6
+224 223 4
+223 3 6
+3 1 8
+1 0 3
+0 1 4
+1 2 5
+2 222 6
+222 4 5
+4 5 8
+5 221 3
+221 5 4
+5 77 4
+77 78 6
+78 79 5
+79 32 8
+32 34 8
+34 159 6
+159 17 8
+17 195 7
+195 220 7
 # ROUTE_ID
 12
 ## EDGES
-248 161 1
-161 171 1
-171 249 1
-249 199 1
-199 218 1
-218 217 1
-217 250 1
-250 251 1
-251 252 1
-252 253 1
-253 254 1
-254 255 1
-255 256 1
-256 56 1
-56 62 1
-62 257 1
-257 62 1
-62 56 1
-56 258 1
-258 56 1
-56 256 1
-256 255 1
-255 259 1
-259 76 1
-76 260 1
-260 76 1
-76 252 1
-252 251 1
-251 250 1
-250 217 1
-217 218 1
-218 199 1
-199 249 1
-249 171 1
-171 161 1
-161 248 1
+227 148 3
+148 157 8
+157 228 8
+228 182 8
+182 183 6
+183 200 6
+200 229 7
+229 230 6
+230 231 6
+231 232 8
+232 73 6
+73 233 4
+233 234 4
+234 235 4
+235 54 4
+54 60 3
+60 236 4
+236 60 4
+60 54 3
+54 237 7
+237 54 6
+54 235 5
+235 234 7
+234 233 5
+233 73 3
+73 73 6
+73 231 8
+231 230 8
+230 229 8
+229 200 6
+200 183 4
+183 182 6
+182 228 7
+228 157 5
+157 148 3
+148 227 7
 # ROUTE_ID
 13
 ## EDGES
-261 262 1
-262 162 1
-162 161 1
-161 263 1
-263 264 1
-264 265 1
-265 125 1
-125 117 1
-117 266 1
-266 267 1
-267 268 1
-269 270 1
-270 267 1
-267 266 1
-266 117 1
-117 125 1
-125 163 1
-163 264 1
-264 263 1
-263 161 1
-161 162 1
-162 271 1
-271 201 1
-201 262 1
-262 261 1
+238 239 6
+239 149 8
+149 148 3
+148 240 6
+240 241 8
+241 150 5
+150 150 4
+150 111 4
+111 112 3
+112 242 8
+242 243 6
+243 244 6
+245 246 6
+246 243 5
+243 242 8
+242 112 6
+112 111 3
+111 150 5
+150 241 7
+241 240 7
+240 148 8
+148 149 5
+149 247 8
+247 186 4
+186 239 5
+239 238 7
 # ROUTE_ID
 14
 ## EDGES
-195 272 1
-272 273 1
-273 95 1
-95 96 1
-96 5 1
-5 274 1
-274 97 1
-97 8 1
-8 10 1
-10 275 1
-275 262 1
-262 162 1
-162 276 1
-276 162 1
-162 163 1
-163 277 1
-277 278 1
-278 279 1
-279 269 1
-269 279 1
-279 280 1
-280 163 1
-163 162 1
-162 281 1
-281 162 1
-162 271 1
-271 201 1
-201 207 1
-207 282 1
-282 207 1
-207 40 1
-40 8 1
-8 5 1
-5 80 1
-80 283 1
-283 187 1
-187 195 1
+178 248 4
+248 249 7
+249 93 5
+93 94 4
+94 5 3
+5 250 8
+250 76 7
+76 7 5
+7 9 6
+9 251 6
+251 239 4
+239 149 8
+149 252 7
+252 149 3
+149 150 3
+150 253 7
+253 254 8
+254 245 6
+245 254 6
+254 254 8
+254 150 5
+150 150 3
+150 149 7
+149 255 8
+255 149 7
+149 247 7
+247 186 7
+186 191 4
+191 256 4
+256 191 8
+191 38 4
+38 7 8
+7 5 5
+5 77 5
+77 257 3
+257 171 4
+171 178 3
 # ROUTE_ID
 15
 ## EDGES
-0 1 1
-1 2 1
-2 3 1
-3 228 1
-228 229 1
-229 284 1
-284 285 1
-285 286 1
-286 287 1
-287 288 1
-288 289 1
-289 290 1
-290 291 1
-291 292 1
-292 293 1
-293 292 1
-292 291 1
-291 290 1
-290 289 1
-289 287 1
-287 288 1
-288 286 1
-286 285 1
-285 288 1
-288 229 1
-229 228 1
-228 3 1
-3 1 1
-1 0 1
+0 1 7
+1 2 6
+2 3 7
+3 208 4
+208 209 3
+209 258 8
+258 259 5
+259 260 7
+260 261 4
+261 258 7
+258 262 3
+262 263 8
+263 264 5
+264 265 5
+265 266 4
+266 265 6
+265 264 3
+264 263 6
+263 262 5
+262 261 3
+261 258 6
+258 260 5
+260 259 6
+259 258 3
+258 209 4
+209 208 3
+208 3 5
+3 1 8
+1 0 3
