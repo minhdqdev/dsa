@@ -43,10 +43,3 @@ void strip(char *str, char *result){
     strncpy(result, str+j, sizeof(char) * (i-j));
     result[i-j] = '\0';
 }
-
-// int main(){
-//     char a[50] = "test1.txt";
-//     char b[50] = "test1.txt ";
-
-//     printf("%d\n", strBeginsWith(a, b));
-// }

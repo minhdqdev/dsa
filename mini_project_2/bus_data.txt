@@ -1,69 +1,1054 @@
+# VERTICES
+26 : Ba La
+160 : Ba Trieu
+40 : Bac Co
+162 : Bach Mai
+145 : Bai do xe Cau Giay
+0 : Ben xe Gia Lam
+53 : Ben xe Giap Bat
+205 : Ben xe My Dinh
+59 : Ben xe Nuoc Ngam
+28 : Ben xe Yen Nghia
+178 : Bo Ho
+186 : Buoi
+4 : Cau Chuong Duong
+112 : Cau Dien
+209 : Cau Duong
+146 : Cau Giay
+130 : Cau Gie
+131 : Cau Gie (bai xe khu vuc nga 3 duong noi thong giua QL1A va duong 75)
+248 : Cau Go
+246 : Cau Noi
+244 : Cau Noi- Co Nhue
+151 : Cau Thang Long
+63 : Cau Vinh Tuy
+86 : Cau Voi
+22 : Cau vuot Nga tu So
+65 : Chu Huy Man
+47 : Chu Van An
+230 : Chua Boc
+201 : Chua Lang
+260 : Co Loa
+245 : Co Nhue
+115 : Cong lang Phu Dien
+227 : Cong vien Nghia Do
+220 : Cong vien Thong Nhat
+238 : Cong vien nuoc Ho Tay
+255 : DTC xe buyt Hoang Quoc Viet
+265 : Da Phuc
+236 : Dai Ang
+61 : Dai La
+64 : Dam Quang Trung
+211 : Dang Phuc Thong
+228 : Dao Tan
+222 : De Gia Thuong
+175 : De Huu Hong
+184 : De La Thanh
+156 : Diem dung xe buyt don tra khach (san do xe nha ga T2)
+147 : Diem trung chuyen Cau Giay
+76 : Diem trung chuyen Long Bien
+252 : Diem trung chuyen xe buyt Hoang Quoc Viet
+45 : Dien Bien Phu
+235 : Dinh Cong
+171 : Dinh Tien Hoang
+126 : Do Xa
+216 : Doc La
+259 : Doc Van
+181 : Doi Can
+262 : Dong Anh
+167 : Dong My
+144 : Duong 429 (phia Tay)
+117 : Duong K1 Cau Dien
+202 : Duong Lang
+88 : Duong Linh Nam
+165 : Duong Ngoc Hoi
+68 : Duong Phuc Loi
+13 : Duong Thanh
+173 : Duong Vanh Dai 3
+261 : Duong cai tranh Quoc lo 3
+89 : Duong dan cau Thanh Tri
+153 : Duong duoi cau vuot Kim Chung
+143 : Duong truc huyen Phu Tuc, Hoang Long
+140 : Duong truc huyen Thao Chinh, Tan Dan
+155 : Duong vao san do nha ga T2, san bay Noi Bai
+114 : Ga Phu Dien
+54 : Giai Phong
+129 : Guot
+210 : Ha Huy Tap
+16 : Hai Ba Trung
+109 : Ham Nghi
+170 : Hang Bai
+10 : Hang Cot
+7 : Hang Dau
+12 : Hang Dieu
+11 : Hang Ga
+94 : Hang Muoi
+8 : Hang Than
+249 : Hang Thung
+93 : Hang Tre
+92 : Hang Voi
+111 : Ho Tung Mau
+193 : Ho Xuan Huong
+242 : Hoang Cong Chat
+191 : Hoang Hoa Tham
+102 : Hoang Minh Giam
+149 : Hoang Quoc Viet
+226 : Hoc vien Nong nghiep Viet Nam
+66 : Hoi Xa
+135 : Hong Van (Van La, Thuong Tin)
+200 : Huynh Thuc Khang
+18 : Kham Thien
+119 : Khu do thi Linh Dam
+189 : Khu lien co quan So nganh Ha Noi
+100 : Khuong Dinh
+120 : Kim Dong
+99 : Kim Giang
+185 : Kim Ma
+84 : Kim Nguu
+239 : Lac Long Quan
+196 : Lang
+199 : Lang Ha
+161 : Le Dai Hanh
+17 : Le Duan
+180 : Le Hong Phong
+179 : Le Thai To
+163 : Le Thanh Nghi
+42 : Le Thanh Tong
+233 : Le Trong Tan
+37 : Le Van Linh
+122 : Lien Ninh
+182 : Lieu Giai
+95 : Linh Dam (Khu do thi Linh Dam)
+83 : Lo Duc
+257 : Lo Su
+75 : Long Bien
+221 : Long Bien (Diem quay dau tai pho Hang Khoai)
+56 : Long Bien (Diem quay dau truoc pho Hang Khoai)
+207 : Long Bien (doi dien Doi CSGT so 1 Ha Noi)
+215 : Long Bien (duong danh rieng cho xe buyt)
+78 : Ly Thai To
+159 : Ly Thuong Kiet
+57 : Ly Thuong Kiet -Le Duan
+104 : Mac Thai Tong
+62 : Minh Khai
+214 : Minh Khai (Tu Son)
+58 : Nga 3 Duoi Ca
+136 : Nga ba Do Xa
+29 : Nga tu So
+74 : Nga tu Vong
+70 : Ngach 195/9 Phuc Loi
+127 : Nghe
+98 : Nghiem Xuan Yem
+253 : Ngo 12 Pham Van Dong
+118 : Ngo 172 Phu Dien
+69 : Ngo 193 Phuc loi
+71 : Ngo 195 Phuc Loi
+1 : Ngo Gia Kham
+208 : Ngo Gia Tu
+79 : Ngo Quyen
+35 : Ngo Tram
+225 : Ngo Xuan Quang
+192 : Ngoc Ha
+60 : Ngoc Hoi
+2 : Ngoc Lam
+166 : Ngu Hiep
+194 : Nguyen Binh Khiem
+103 : Nguyen Chanh
+183 : Nguyen Chi Thanh
+110 : Nguyen Co Thach
+206 : Nguyen Du
+224 : Nguyen Duc Thuan
+96 : Nguyen Duy Trinh
+108 : Nguyen Hoang
+188 : Nguyen Hoang Ton
+77 : Nguyen Huu Huan
+97 : Nguyen Huu Tho
+157 : Nguyen Khanh Toan
+263 : Nguyen Khe
+20 : Nguyen Luong Bang
+39 : Nguyen Son
+85 : Nguyen Tam Trinh
+49 : Nguyen Thai Hoc
+30 : Nguyen Thuong Hien
+23 : Nguyen Trai
+101 : Nguyen Tuan
+3 : Nguyen Van Cu
+148 : Nguyen Van Huyen
+223 : Nguyen Van Linh
+217 : Ninh Hiep
+19 : O Cho Dua
+204 : Pham Hung
+106 : Pham Van Bach
+150 : Pham Van Dong
+243 : Phan Ba Vanh
+50 : Phan Boi Chau
+51 : Phan Chu Trinh
+38 : Phan Dinh Phung
+90 : Phap Van
+169 : Pho Hue
+266 : Pho Ni
+113 : Phu Dien
+116 : Phu Dien (gan duong Trai Ga)
+14 : Phu Doan
+218 : Phu Dong
+264 : Phu Lo
+138 : Phu Minh
+142 : Phu Tuc (canh nha van hoa thon Luu Dong)
+72 : Phuc Loi (doi dien truong THPT Phuc Loi)
+36 : Phung Hung
+123 : Quan Ganh
+34 : Quan Su
+9 : Quan Thanh
+43 : Quang Trung
+25 : Quang Trung (Ha Dong)
+33 : Quang truong 1-5
+168 : Quang truong Ben xe Giap Bat
+237 : Quang truong ben xe Giap Bat
+132 : Quoc Lo 1A
+121 : Quoc lo 1
+258 : Quoc lo 3
+27 : Quoc lo 6
+154 : San bay Noi Bai (San do P2, nha ga T1)
+87 : Tam Trinh
+139 : Tan Dan (doi dien cong thong Dai Nghiep, xa Tan Dan, huyen Phu Xuyen)
+254 : Tan Xuan
+81 : Tang Bat Ho
+21 : Tay Son
+229 : Thai Ha
+198 : Thai Thinh
+128 : Thi tran Phu Xuyen
+124 : Thi tran Thuong Tin
+133 : Thuong Tin
+251 : Thuy Khue
+125 : Tia
+240 : To Hieu
+48 : Ton Duc Thang
+107 : Ton That Thuyet
+231 : Ton That Tung
+164 : Tran Dai Nghia
+158 : Tran Dang Ninh
+234 : Tran Dien
+32 : Tran Hung Dao
+41 : Tran Khanh Du
+172 : Tran Nguyen Han
+195 : Tran Nhan Tong
+5 : Tran Nhat Duat
+46 : Tran Phu
+24 : Tran Phu (Ha Dong)
+212 : Tran Phu (Tu Son)
+55 : Tran Quang Khai
+241 : Tran Quoc Hoan
+203 : Tran Thai Tong
+80 : Tran Thanh Tong
+177 : Tran Thu Do
+44 : Trang Thi
+52 : Trang Tien
+15 : Trieu Quoc Dat
+105 : Trung Kinh
+219 : Trung Mau (Gia Lam)
+73 : Truong Chinh
+232 : Truong Trinh
+174 : Tu Hiep
+213 : Tu Son (Cong benh vien da khoa Tu Son)
+190 : Van Cao
+176 : Van Phuc
+187 : Vo Chi Cong
+152 : Vo Van Kiet
+247 : Vong xuyen Buoi, Hoang Quoc Viet
+67 : Vu Xuan Thieu
+82 : Yecxanh
+197 : Yen Lang
+6 : Yen Phu
+250 : Yen Phu (quay dau tai so nha 92 Yen Phu)
+31 : Yet Kieu
+256 : cau vuot Hoang Hoa Tham
+134 : duong 427
+137 : duong 429 (phia Dong)
+141 : duong 429 (phia Tay)
+91 : re phai duong Minh Khai
+# ROUTE_ID
 01
-Ben xe Gia Lam - 1 - Ngo Gia Kham - 1 - Ngoc Lam - 1 - Nguyen Van Cu - 1 - Cau Chuong Duong - 1 - Tran Nhat Duat - 1 - Yen Phu - 1 - quay dau tai diem trung chuyen Long Bien - 1 - Yen Phu - 1 - Hang Dau - 1 - Hang Than - 1 - Quan Thanh - 1 - Hang Cot - 1 - Hang Ga - 1 - Hang Dieu - 1 - Duong Thanh - 1 - Phu Doan - 1 - Trieu Quoc Dat - 1 - Hai Ba Trung - 1 - Le Duan - 1 - Kham Thien - 1 - O Cho Dua - 1 - Nguyen Luong Bang - 1 - Tay Son - 1 - Cau vuot Nga tu So - 1 - Nguyen Trai - 1 - Tran Phu (Ha Dong) - 1 - Quang Trung (Ha Dong) - 1 - Ba La - 1 - Quoc lo 6 - 1 - Ben xe Yen Nghia
-Ben xe Yen Nghia - 1 - Quoc lo 6 - 1 - Ba La - 1 - Quang Trung (Ha Dong) - 1 - Tran Phu (Ha Dong) - 1 - Nguyen Trai - 1 - Nga tu So - 1 - Tay Son - 1 - Nguyen Luong Bang - 1 - Kham Thien - 1 - Nguyen Thuong Hien - 1 - Yet Kieu - 1 - Tran Hung Dao - 1 - Quang truong 1-5 - 1 - Quan Su - 1 - Ngo Tram - 1 - Duong Thanh - 1 - Phung Hung - 1 - Le Van Linh - 1 - Phung Hung (duong trong) - 1 - Phan Dinh Phung - 1 - Hang Dau - 1 - Tran Nhat Duat - 1 - Cau Chuong Duong - 1 - Nguyen Van Cu - 1 - Nguyen Son - 1 - Ngoc Lam - 1 - Ngo Gia Kham - 1 - Ben xe Gia Lam
+## EDGES
+0 1 5
+1 2 8
+2 3 3
+3 4 3
+4 5 7
+5 6 8
+6 6 4
+6 7 3
+7 8 7
+8 9 6
+9 10 5
+10 11 6
+11 12 5
+12 13 8
+13 14 6
+14 15 5
+15 16 8
+16 17 6
+17 18 6
+18 19 5
+19 20 8
+20 21 6
+21 22 4
+22 23 8
+23 24 4
+24 25 7
+25 26 6
+26 27 3
+27 28 7
+28 27 4
+27 26 5
+26 25 7
+25 24 8
+24 23 6
+23 29 6
+29 21 6
+21 20 3
+20 18 4
+18 30 4
+30 31 6
+31 32 4
+32 33 3
+33 34 7
+34 35 4
+35 13 8
+13 36 8
+36 37 5
+37 36 6
+36 38 5
+38 7 8
+7 5 5
+5 4 7
+4 3 6
+3 39 6
+39 2 8
+2 1 7
+1 0 5
+# ROUTE_ID
 02
-Bac Co - 1 - Tran Khanh Du - 1 - Tran Hung Dao - 1 - Le Thanh Tong - 1 - Hai Ba Trung - 1 - Quang Trung - 1 - Trang Thi - 1 - Dien Bien Phu - 1 - Tran Phu - 1 - Chu Van An - 1 - Ton Duc Thang - 1 - Nguyen Luong Bang - 1 - Tay Son - 1 - Nga tu So - 1 - Nguyen Trai - 1 - Tran Phu (Ha Dong) - 1 - Quang Trung (Ha Dong) - 1 - Ba La - 1 - Quoc lo 6 - 1 - Ben xe Yen Nghia
-Ben xe Yen Nghia - 1 - Quoc lo 6 - 1 - Ba La - 1 - Quang Trung (Ha Dong) - 1 - Tran Phu (Ha Dong) - 1 - Nguyen Trai - 1 - Nga tu So - 1 - Tay Son - 1 - Nguyen Luong Bang - 1 - Ton Duc Thang - 1 - Nguyen Thai Hoc - 1 - Phan Boi Chau - 1 - Hai Ba Trung - 1 - Phan Chu Trinh - 1 - Trang Tien - 1 - Bac Co
+## EDGES
+40 41 6
+41 32 4
+32 42 5
+42 16 3
+16 43 8
+43 44 5
+44 45 8
+45 46 6
+46 47 3
+47 48 6
+48 20 7
+20 21 5
+21 29 8
+29 23 5
+23 24 4
+24 25 3
+25 26 6
+26 27 5
+27 28 6
+28 27 4
+27 26 6
+26 25 5
+25 24 4
+24 23 6
+23 29 8
+29 21 8
+21 20 3
+20 48 3
+48 49 4
+49 50 3
+50 16 7
+16 51 3
+51 52 8
+52 40 5
+# ROUTE_ID
 03A
-Ben xe Giap Bat - 1 - Giai Phong - 1 - Le Duan - 1 - Nguyen Thuong Hien - 1 - Yet Kieu - 1 - Tran Hung Dao - 1 - Tran Khanh Du - 1 - Tran Quang Khai - 1 - Tran Nhat Duat - 1 - Long Bien (Diem quay dau truoc pho Hang Khoai) - 1 - Tran Nhat Duat - 1 - Cau Chuong Duong - 1 - Nguyen Van Cu - 1 - Nguyen Son - 1 - Ngoc Lam - 1 - Ngo Gia Kham - 1 - Ben xe Gia Lam
-Ben xe Gia Lam - 1 - Ngo Gia Kham - 1 - Ngoc Lam - 1 - Nguyen Van Cu - 1 - Cau Chuong Duong - 1 - Tran Nhat Duat - 1 - Long Bien (Diem quay dau truoc pho Hang Khoai) - 1 - Tran Nhat Duat - 1 - Tran Quang Khai - 1 - Tran Khanh Du - 1 - Tran Hung Dao - 1 - Quan Su - 1 - Ly Thuong Kiet -Le Duan - 1 - Giai Phong - 1 - Nga 3 Duoi Ca - 1 - Ben xe Giap Bat
+## EDGES
+53 54 8
+54 17 8
+17 30 6
+30 31 8
+31 32 3
+32 41 7
+41 55 3
+55 5 4
+5 56 5
+56 5 5
+5 4 4
+4 3 5
+3 39 8
+39 2 3
+2 1 7
+1 0 6
+0 1 7
+1 2 6
+2 3 8
+3 4 7
+4 5 8
+5 56 8
+56 5 7
+5 55 8
+55 41 4
+41 32 4
+32 34 5
+34 57 7
+57 54 3
+54 58 5
+58 53 4
+# ROUTE_ID
 03B
-Ben xe Nuoc Ngam - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Ben xe Giap Bat (Quang truong Ben xe Giap Bat) - 1 - Giai Phong - 1 - Dai La - 1 - Minh Khai - 1 - Cau Vinh Tuy - 1 - Dam Quang Trung - 1 - Chu Huy Man - 1 - Hoi Xa - 1 - Vu Xuan Thieu - 1 - Duong Phuc Loi - 1 - Ngo 193 Phuc loi - 1 - Ngach 195/9 Phuc Loi - 1 - Ngo 195 Phuc Loi - 1 - Phuc Loi (doi dien truong THPT Phuc Loi)
-Phuc Loi (doi dien truong THPT Phuc Loi) - 1 - Duong Phuc Loi - 1 - Vu Xuan Thieu - 1 - Hoi Xa - 1 - Chu Huy Man - 1 - Dam Quang Trung - 1 - Cau Vinh Tuy - 1 - Minh Khai - 1 - Dai La - 1 - Truong Chinh - 1 - Nga tu Vong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - quay dau tai diem mo doi dien cong ty ABB - 1 - Ngoc Hoi - 1 - Ben xe Nuoc Ngam
+## EDGES
+59 60 7
+60 54 5
+54 53 3
+53 54 8
+54 61 3
+61 62 4
+62 63 7
+63 64 3
+64 65 6
+65 66 6
+66 67 3
+67 68 5
+68 69 6
+69 70 7
+70 71 8
+71 72 8
+72 68 8
+68 67 8
+67 66 8
+66 65 4
+65 64 3
+64 63 6
+63 62 6
+62 61 6
+61 73 8
+73 74 8
+74 54 8
+54 60 7
+60 60 5
+60 59 6
+# ROUTE_ID
 04
-Long Bien-quay dau tai doi dien pho Hang Than-Yen Phu- Diem trung chuyen Long Bien - 1 - Tran Nhat Duat - 1 - Nguyen Huu Huan - 1 - Ly Thai To - 1 - Ngo Quyen - 1 - Hai Ba Trung - 1 - Le Thanh Tong - 1 - Tran Thanh Tong - 1 - Tang Bat Ho - 1 - Yecxanh - 1 - Lo Duc - 1 - Kim Nguu - 1 - Nguyen Tam Trinh-Cau Voi- Tam Trinh - 1 - Duong Linh Nam - 1 - Duong dan cau Thanh Tri - 1 - Phap Van - 1 - Re trai tai nut giao duong vanh dai 3 va duong Ngoc Hoi (gan Ben xe Nuoc Ngam) - 1 - Ngoc Hoi - 1 - Ben xe Nuoc Ngam
-Ben xe Nuoc Ngam - 1 - Giai Phong - 1 - Phap Van - 1 - Duong dan cau Thanh Tri - 1 - Duong Linh Nam - 1 - Nguyen Tam Trinh-re phai duong Minh Khai-Quay dau tai diem mo doi dien 400 Minh Khai-Minh Khai - 1 - Kim Nguu - 1 - Lo Duc - 1 - Phan Chu Trinh - 1 - Ly Thai To - 1 - Ngo Quyen - 1 - Hang Voi - 1 - Hang Tre - 1 - Hang Muoi - 1 - Tran Nhat Duat - 1 - Diem trung chuyen Long Bien - 1 - Yen Phu - 1 - Long Bien
+## EDGES
+75 6 6
+6 76 6
+76 5 8
+5 77 8
+77 78 5
+78 79 7
+79 16 8
+16 42 5
+42 80 5
+80 81 5
+81 82 3
+82 83 5
+83 84 7
+84 85 7
+85 86 5
+86 87 3
+87 88 8
+88 89 7
+89 90 4
+90 60 5
+60 59 7
+59 54 7
+54 90 3
+90 89 4
+89 88 7
+88 85 5
+85 91 8
+91 62 5
+62 84 8
+84 83 6
+83 51 5
+51 78 8
+78 79 8
+79 92 5
+92 93 5
+93 94 4
+94 5 4
+5 76 8
+76 6 5
+6 75 7
+# ROUTE_ID
 05
-Linh Dam (Khu do thi Linh Dam) - 1 - Nguyen Duy Trinh - 1 - Nguyen Huu Tho - 1 - Nghiem Xuan Yem - 1 - Kim Giang - 1 - Khuong Dinh - 1 - Nguyen Trai - 1 - Quay dau tai 177 Nguyen Trai - 1 - Nguyen Trai - 1 - Nguyen Tuan - 1 - Hoang Minh Giam - 1 - Nguyen Chanh - 1 - Mac Thai Tong - 1 - Trung Kinh - 1 - Pham Van Bach - 1 - Ton That Thuyet - 1 - Nguyen Hoang - 1 - Ham Nghi - 1 - Nguyen Co Thach - 1 - Ho Tung Mau -Quay dau tai phia truoc nghia trang Mai Dich -Ho Tung Mau - 1 - Cau Dien - 1 - Phu Dien - 1 - Ga Phu Dien - 1 - Cong lang Phu Dien - 1 - Phu Dien (gan duong Trai Ga)
-Phu Dien (gan duong Trai Ga) - 1 - Cong lang Phu Dien - 1 - Ga Phu Dien - 1 - Duong K1 Cau Dien - 1 - Ngo 172 Phu Dien - 1 - Phu Dien - 1 - Cau Dien - 1 - Quay dau doi dien 30 Cau Dien - 1 - Ho Tung Mau - 1 - Nguyen Co Thach - 1 - Ham Nghi - 1 - Nguyen Hoang - 1 - Ton That Thuyet - 1 - Pham Van Bach - 1 - Trung Kinh - 1 - Mac Thai Tong - 1 - Nguyen Chanh - 1 - Hoang Minh Giam - 1 - Nguyen Tuan - 1 - Nguyen Trai - 1 - quay dau tai nga 4 Khuat Duy Tien, Nguyen Trai - 1 - Nguyen Trai - 1 - Khuong Dinh - 1 - Kim Giang - 1 - Nghiem Xuan Yem - 1 - Nguyen Huu Tho - 1 - Nguyen Duy Trinh - 1 - Khu do thi Linh Dam
+## EDGES
+95 96 4
+96 97 7
+97 98 3
+98 99 8
+99 100 8
+100 23 5
+23 23 8
+23 101 7
+101 102 6
+102 103 3
+103 104 8
+104 105 3
+105 106 8
+106 107 4
+107 108 5
+108 109 5
+109 110 8
+110 111 5
+111 111 3
+111 112 5
+112 113 8
+113 114 6
+114 115 6
+115 113 6
+116 115 6
+115 114 3
+114 117 8
+117 118 6
+118 113 8
+113 112 6
+112 111 6
+111 110 3
+110 109 5
+109 108 4
+108 107 8
+107 106 5
+106 105 4
+105 104 8
+104 103 8
+103 102 4
+102 101 3
+101 23 3
+23 23 5
+23 100 6
+100 99 6
+99 98 8
+98 97 5
+97 96 3
+96 119 3
+# ROUTE_ID
 06A
-Ben xe Giap Bat - 1 - Giai Phong - 1 - Kim Dong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - Quoc Lo 1 - 1 - Lien Ninh - 1 - Quan Ganh - 1 - Thi tran Thuong Tin - 1 - Tia - 1 - Do Xa - 1 - Nghe - 1 - Thi tran Phu Xuyen - 1 - Guot - 1 - Cau Gie (bai xe khu vuc nga 3 duong noi thong giua QL1A va duong 75)
-Cau Gie (bai xe khu vuc nga 3 duong noi thong giua QL1A va duong 75) - 1 - Quoc Lo 1A - 1 - Guot - 1 - Thi tran Phu Xuyen - 1 - Nghe - 1 - Do Xa - 1 - Tia - 1 - Thi tran Thuong Tin - 1 - Quan Ganh - 1 - Lien Ninh - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Ben xe Giap Bat
+## EDGES
+53 54 5
+54 120 6
+120 54 4
+54 60 3
+60 121 7
+121 122 4
+122 123 3
+123 124 3
+124 125 3
+125 126 6
+126 127 3
+127 128 3
+128 129 5
+129 130 3
+131 132 7
+132 129 5
+129 128 8
+128 127 7
+127 126 8
+126 125 3
+125 124 6
+124 123 3
+123 122 4
+122 60 3
+60 54 6
+54 53 4
+# ROUTE_ID
 06B
-Ben xe Giap Bat - 1 - Giai Phong - 1 - Kim Dong - 1 - quay dau tai diem mo - 1 - Kim Dong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - Thuong Tin - 1 - duong 427 - 1 - Hong Van (Van La, Thuong Tin)
-Hong Van (Van La, Thuong Tin) - 1 - duong 427 - 1 - Thuong Tin( Duong Tran Lu) - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Ben xe Giap Bat
+## EDGES
+53 54 4
+54 120 6
+120 120 5
+120 54 6
+54 60 6
+60 133 7
+133 134 3
+134 135 5
+135 134 7
+134 133 7
+133 60 6
+60 54 6
+54 53 8
+# ROUTE_ID
 06C
-Ben xe Giap Bat - 1 - Giai Phong - 1 - Kim Dong - 1 - quay dau tai diem mo - 1 - Kim Dong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - Thuong Tin - 1 - Tia - 1 - Nga ba Do Xa - 1 - duong 429 (phia Dong) - 1 - Phu Minh (Phu Xuyen - 1 - Cong ty Viet Tuyen)
-Phu Minh (Phu Xuyen - 1 - Cong ty Viet Tuyen) - 1 - duong 429 (phia Dong) - 1 - Nga ba Do Xa - 1 - Tia - 1 - Thuong Tin - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Ben xe Giap Bat
+## EDGES
+53 54 7
+54 120 8
+120 120 6
+120 54 6
+54 60 7
+60 133 4
+133 125 5
+125 136 6
+136 137 6
+137 138 3
+138 137 6
+137 136 5
+136 125 8
+125 133 3
+133 60 3
+60 54 8
+54 53 3
+# ROUTE_ID
 06D
-Ben xe Giap Bat - 1 - Giai Phong - 1 - Kim Dong - 1 - quay dau tai diem mo - 1 - Kim Dong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - Thuong Tin - 1 - Tia - 1 - Quoc lo 1 - 1 - Re phai vao duong truc huyen Thao Chinh, Tan Dan - 1 - Tan Dan (doi dien cong thong Dai Nghiep, xa Tan Dan, huyen Phu Xuyen)
-Tan Dan (doi dien cong thong Dai Nghiep, xa Tan Dan, huyen Phu Xuyen) - 1 - Duong truc huyen Thao Chinh, Tan Dan - 1 - Quoc lo 1 - 1 - Tia - 1 - Thuong Tin - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Ben xe Giap Bat
+## EDGES
+53 54 3
+54 120 5
+120 120 6
+120 54 7
+54 60 6
+60 133 5
+133 125 5
+125 121 7
+121 139 4
+139 140 3
+140 121 8
+121 125 4
+125 133 4
+133 60 8
+60 54 6
+54 53 6
+# ROUTE_ID
 06E
-Ben xe Giap Bat - 1 - Giai Phong - 1 - Kim Dong - 1 - quay dau tai diem mo - 1 - Kim Dong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - Thuong Tin - 1 - duong 429 (phia Tay) - 1 - Re trai duong truc huyen Phu Tuc, Hoang Long - 1 - Phu Tuc (canh nha van hoa thon Luu Dong)
-Phu Tuc (canh nha van hoa thon Luu Dong) - 1 - Duong truc huyen Phu Tuc, Hoang Long - 1 - Duong 429 (phia Tay) - 1 - Tia - 1 - Thuong Tin - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Ben xe Giap Bat
+## EDGES
+53 54 6
+54 120 6
+120 120 8
+120 54 8
+54 60 3
+60 133 6
+133 141 6
+141 142 4
+142 143 3
+143 144 3
+144 125 4
+125 133 3
+133 60 8
+60 54 3
+54 53 8
+# ROUTE_ID
 07
-Bai do xe Cau Giay - 1 - Cau Giay - 1 - Diem trung chuyen Cau Giay (he truoc tuong rao Vuon thu Ha Noi) - 1 - Cau Giay - 1 - Nguyen Van Huyen - 1 - Hoang Quoc Viet - 1 - Pham Van Dong - 1 - Cau Thang Long - 1 - Vo Van Kiet - 1 - Duong duoi cau vuot Kim Chung - 1 - Vo Van Kiet - 1 - Quay dau tai diem mo (doi dien cong ty dich vu hang hoa hang khong) - 1 - Vo Van Kiet - 1 - San bay Noi Bai (San do P2, nha ga T1)
-San bay Noi Bai (San do P2, nha ga T1) - 1 - Vo Van Kiet - 1 - Duong vao san do nha ga T2, san bay Noi Bai - 1 - Diem dung xe buyt don tra khach (san do xe nha ga T2) - 1 - Vo Van Kiet - 1 - Cau Thang Long - 1 - Pham Van Dong - 1 - Hoang Quoc Viet - 1 - Nguyen Van Huyen - 1 - Nguyen Khanh Toan - 1 - Tran Dang Ninh - 1 - Cau Giay - 1 - Diem trung chuyen Cau Giay - 1 - Cau Giay (duong duoi) - 1 - Bai do xe Cau Giay
+## EDGES
+145 146 6
+146 147 5
+147 146 6
+146 148 8
+148 149 6
+149 150 4
+150 151 4
+151 152 8
+152 153 6
+153 152 4
+152 152 8
+152 154 8
+154 152 4
+152 155 6
+155 156 4
+156 152 4
+152 151 3
+151 150 4
+150 149 8
+149 148 5
+148 157 4
+157 158 4
+158 146 8
+146 147 6
+147 146 4
+146 145 6
+# ROUTE_ID
 08A
-Long Bien - 1 - Yen Phu - 1 - Diem trung chuyen Long Bien - 1 - Tran Nhat Duat - 1 - Nguyen Huu Huan - 1 - Ly Thai To - 1 - Ngo Quyen - 1 - Ly Thuong Kiet - 1 - Ba Trieu - 1 - Le Dai Hanh - 1 - Bach Mai - 1 - Le Thanh Nghi - 1 - Tran Dai Nghia - 1 - Dai La - 1 - Giai Phong - 1 - Duong Ngoc Hoi - 1 - Ngu Hiep - 1 - Dong My
-Dong My - 1 - Ngu Hiep - 1 - Duong Ngoc Hoi - 1 - Giai Phong - 1 - Quang truong Ben xe Giap Bat - 1 - Giai Phong - 1 - Truong Chinh - 1 - Dai La - 1 - Tran Dai Nghia - 1 - Le Thanh Nghi - 1 - Bach Mai - 1 - Pho Hue - 1 - Hang Bai - 1 - Dinh Tien Hoang - 1 - Tran Nguyen Han - 1 - Ngo Quyen - 1 - Hang Tre - 1 - Hang Muoi - 1 - Tran Nhat Duat - 1 - Diem trung chuyen Long Bien - 1 - Yen Phu - 1 - Long Bien
+## EDGES
+75 6 6
+6 76 4
+76 5 5
+5 77 7
+77 78 5
+78 79 6
+79 159 8
+159 160 5
+160 161 8
+161 162 7
+162 163 3
+163 164 3
+164 61 7
+61 54 4
+54 165 4
+165 166 8
+166 167 8
+167 166 5
+166 165 6
+165 54 4
+54 168 7
+168 54 3
+54 73 7
+73 61 6
+61 164 6
+164 163 6
+163 162 3
+162 169 8
+169 170 6
+170 171 7
+171 172 4
+172 79 3
+79 93 5
+93 94 8
+94 5 8
+5 76 3
+76 6 3
+6 75 4
+# ROUTE_ID
 08B
-Long Bien - 1 - Nguyen Huu Huan - 1 - Ly Thai To - 1 - Ngo Quyen - 1 - Ly Thuong Kiet - 1 - Ba Trieu - 1 - Le Dai Hanh - 1 - Bach Mai - 1 - Le Thanh Nghi - 1 - Dai La - 1 - Giai Phong - 1 - Duong Vanh Dai 3 - 1 - Tu Hiep - 1 - De Huu Hong - 1 - Van Phuc
-Van Phuc - 1 - De Huu Hong - 1 - Tu Hiep - 1 - Tran Thu Do - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Dai La - 1 - Le Thanh Nghi - 1 - Bach Mai - 1 - Pho Hue - 1 - Hang Bai - 1 - Tran Nguyen Han- Hang Tre - 1 - Tran Nhat Duat - 1 - Long Bien
+## EDGES
+75 77 7
+77 78 6
+78 79 4
+79 159 4
+159 160 3
+160 161 5
+161 162 3
+162 163 5
+163 61 8
+61 54 7
+54 173 4
+173 174 6
+174 175 7
+175 176 5
+176 175 7
+175 174 7
+174 177 4
+177 60 8
+60 54 7
+54 61 7
+61 163 8
+163 162 6
+162 169 6
+169 170 6
+170 172 4
+172 93 6
+93 5 5
+5 75 5
+# ROUTE_ID
 09A
-Bo Ho - 1 - Le Thai To - 1 - Trang Thi - 1 - Dien Bien Phu - 1 - Le Hong Phong - 1 - Doi Can - 1 - Lieu Giai - 1 - Nguyen Chi Thanh -De La Thanh-Kim Ma- Diem trung chuyen Cau Giay - 1 - Buoi - 1 - Vo Chi Cong - 1 - Nguyen Hoang Ton - 1 - Khu lien co quan So nganh Ha Noi
-Khu lien co quan So nganh Ha Noi - 1 - Nguyen Hoang Ton - 1 - Vo Chi Cong - 1 - Buoi - 1 - Cau Giay - 1 - Kim Ma - 1 - Lieu Giai - 1 - Van Cao - 1 - Hoang Hoa Tham - 1 - Ngoc Ha - 1 - Le Hong Phong - 1 - Dien Bien Phu - 1 - Phan Boi Chau - 1 - Hai Ba Trung - 1 - Hang Bai - 1 - Dinh Tien Hoang - 1 - Bo Ho
+## EDGES
+178 179 7
+179 44 8
+44 45 4
+45 180 4
+180 181 3
+181 182 3
+182 183 7
+183 184 4
+184 185 6
+185 147 5
+147 186 7
+186 187 6
+187 188 7
+188 189 5
+189 188 3
+188 187 3
+187 186 7
+186 146 6
+146 185 6
+185 182 8
+182 190 3
+190 191 8
+191 192 5
+192 180 5
+180 45 3
+45 50 5
+50 16 4
+16 170 8
+170 171 3
+171 178 4
+# ROUTE_ID
 09B
-Bo Ho - 1 - Le Thai To - 1 - Ba Trieu - 1 - Ho Xuan Huong - 1 - Nguyen Binh Khiem - 1 - Tran Nhan Tong - 1 - Le Duan - 1 - Kham Thien - 1 - Nguyen Luong Bang - 1 - Tay Son - 1 - Nga Tu So - 1 - Lang - 1 - Yen Lang - 1 - Thai Thinh - 1 - Lang Ha - 1 - Huynh Thuc Khang - 1 - Nguyen Chi Thanh - 1 - Chua Lang - 1 - Duong Lang - 1 - Cau Giay - 1 - Tran Thai Tong - 1 - Ton That Thuyet - 1 - Pham Hung - 1 - Ben xe My Dinh
-Ben xe My Dinh - 1 - Pham Hung - 1 - Ton That Thuyet - 1 - Tran Thai Tong - 1 - Cau Giay - 1 - Duong Lang - 1 - Chua Lang - 1 - Nguyen Chi Thanh - 1 - Huynh Thuc Khang - 1 - Lang Ha - 1 - Lang - 1 - Nga Tu So - 1 - Tay Son - 1 - Nguyen Luong Bang - 1 - Kham Thien - 1 - Le Duan - 1 - Tran Nhan Tong - 1 - Quang Trung - 1 - Nguyen Du - 1 - Pho Hue - 1 - Hang Bai - 1 - Dinh Tien Hoang - 1 - Bo Ho
+## EDGES
+178 179 7
+179 160 8
+160 193 6
+193 194 4
+194 195 3
+195 17 4
+17 18 4
+18 20 5
+20 21 7
+21 29 3
+29 196 6
+196 197 4
+197 198 3
+198 199 8
+199 200 4
+200 183 6
+183 201 3
+201 202 7
+202 146 6
+146 203 3
+203 107 3
+107 204 5
+204 205 8
+205 204 6
+204 107 6
+107 203 5
+203 146 5
+146 202 4
+202 201 5
+201 183 7
+183 200 6
+200 199 4
+199 196 7
+196 29 5
+29 21 6
+21 20 7
+20 18 6
+18 17 6
+17 195 7
+195 43 8
+43 206 4
+206 169 5
+169 170 8
+170 171 5
+171 178 4
+# ROUTE_ID
 10A
-Long Bien (doi dien Doi CSGT so 1 Ha Noi - 1 - so 3 Tran Nhat Duat) - 1 - Tran Nhat Duat - 1 - Yen Phu - 1 - Quay dau tai doi dien 92 Yen Phu - 1 - Diem trung chuyen Long Bien - 1 - Tran Nhat Duat - 1 - Cau Chuong Duong - 1 - Nguyen Van Cu - 1 - Ngo Gia Tu - 1 - Cau Duong - 1 - Ha Huy Tap - 1 - Dang Phuc Thong - 1 - Tran Phu (Tu Son) - 1 - Minh Khai (Tu Son) - 1 - Tu Son (Cong benh vien da khoa Tu Son)
-Tu Son (Cong benh vien da khoa Tu Son) - 1 - Minh Khai (Tu Son)- Quay dau tai 38 duong Minh Khai - 1 - Tran Phu (Tu Son) - 1 - Dang Phuc Thong - 1 - Ha Huy Tap - 1 - Cau Duong - 1 - Ngo Gia Tu - 1 - Nguyen Van Cu - 1 - Cau Chuong Duong - 1 - Tran Nhat Duat - 1 - Yen Phu - 1 - Diem trung chuyen Long Bien - 1 - Yen Phu - 1 - Quay dau tai doi dien 92 Yen Phu - 1 - Tran Nhat Duat - 1 - Long Bien (doi dien Doi CSGT so 1 Ha Noi - 1 - so 3 Tran Nhat Duat)
+## EDGES
+207 5 5
+5 6 4
+6 76 7
+76 5 5
+5 4 7
+4 3 6
+3 208 7
+208 209 7
+209 210 7
+210 211 8
+211 212 6
+212 62 6
+62 213 4
+213 214 3
+214 212 5
+212 211 8
+211 210 3
+210 209 5
+209 208 8
+208 3 5
+3 4 7
+4 5 6
+5 6 5
+6 76 5
+76 6 3
+6 5 6
+5 207 4
+# ROUTE_ID
 10B
-Long Bien (duong danh rieng cho xe buyt) - 1 - Yen Phu - 1 - Diem trung chuyen Long Bien - 1 - Tran Nhat Duat - 1 - Cau Chuong Duong - 1 - Nguyen Van Cu - 1 - Ngo Gia Tu - 1 - Cau Duong - 1 - Ha Huy Tap - 1 - Dang Phuc Thong - 1 - Doc La - 1 - Ninh Hiep - 1 - Phu Dong - 1 - Trung Mau (Gia Lam)
-Trung Mau (Gia Lam) - 1 - Phu Dong - 1 - Ninh Hiep - 1 - Doc La - 1 - Dang Phuc Thong - 1 - Ha Huy Tap - 1 - Cau Duong - 1 - Ngo Gia Tu - 1 - Nguyen Van Cu - 1 - Cau Chuong Duong - 1 - Tran Nhat Duat - 1 - Diem trung chuyen Long Bien - 1 - Yen Phu - 1 - Long Bien
+## EDGES
+215 6 7
+6 76 7
+76 5 3
+5 4 8
+4 3 6
+3 208 5
+208 209 3
+209 210 8
+210 211 7
+211 216 8
+216 217 4
+217 218 5
+218 219 8
+219 218 4
+218 217 4
+217 216 8
+216 211 8
+211 210 6
+210 209 8
+209 208 6
+208 3 8
+3 4 3
+4 5 8
+5 76 8
+76 6 3
+6 75 6
+# ROUTE_ID
 11
-Cong vien Thong Nhat - 1 - Tran Nhan Tong - 1 - Quang Trung - 1 - Tran Hung Dao - 1 - Phan Chu Trinh - 1 - Ly Thai To - 1 - Ngo Quyen - 1 - Hang Voi - 1 - Hang Tre - 1 - Hang Muoi - 1 - Long Bien (Diem quay dau truoc pho Hang Khoai) - 1 - Tran Nhat Duat - 1 - Cau Chuong Duong - 1 - De Gia Thuong - 1 - Ngoc Lam - 1 - Nguyen Van Cu - 1 - Nguyen Van Linh - 1 - Nguyen Duc Thuan - 1 - Ngo Xuan Quang - 1 - Hoc vien Nong nghiep Viet Nam
-Hoc vien Nong nghiep Viet Nam - 1 - Ngo Xuan Quang - 1 - Nguyen Duc Thuan - 1 - Nguyen Van Linh - 1 - Nguyen Van Cu - 1 - Ngo Gia Kham - 1 - Ben xe Gia Lam - 1 - Ngo Gia Kham - 1 - Ngoc Lam - 1 - De Gia Thuong - 1 - Cau Chuong Duong - 1 - Tran Nhat Duat - 1 - Long Bien (Diem quay dau tai pho Hang Khoai) - 1 - Tran Nhat Duat - 1 - Nguyen Huu Huan - 1 - Ly Thai To - 1 - Ngo Quyen - 1 - Tran Hung Dao - 1 - Quan Su - 1 - Ly Thuong Kiet - 1 - Le Duan - 1 - Tran Nhan Tong - 1 - Cong vien Thong Nhat
+## EDGES
+220 195 4
+195 43 3
+43 32 3
+32 51 3
+51 78 4
+78 79 4
+79 92 8
+92 93 4
+93 94 6
+94 221 8
+221 5 3
+5 4 6
+4 222 4
+222 2 7
+2 3 3
+3 223 5
+223 224 5
+224 225 6
+225 226 7
+226 225 3
+225 224 6
+224 223 4
+223 3 6
+3 1 8
+1 0 3
+0 1 4
+1 2 5
+2 222 6
+222 4 5
+4 5 8
+5 221 3
+221 5 4
+5 77 4
+77 78 6
+78 79 5
+79 32 8
+32 34 8
+34 159 6
+159 17 8
+17 195 7
+195 220 7
+# ROUTE_ID
 12
-Cong vien Nghia Do - 1 - Nguyen Van Huyen - 1 - Nguyen Khanh Toan - 1 - Dao Tan - 1 - Lieu Giai - 1 - Nguyen Chi Thanh - 1 - Huynh Thuc Khang - 1 - Thai Ha - 1 - Chua Boc - 1 - Ton That Tung - 1 - Truong Trinh - 1 - quay dau tai diem mo 266 Truong Chinh-Truong Chinh- Le Trong Tan - 1 - Tran Dien - 1 - Dinh Cong - 1 - Giai Phong - 1 - Ngoc Hoi - 1 - Dai Ang
-Dai Ang - 1 - Ngoc Hoi - 1 - Giai Phong - 1 - Quang truong ben xe Giap Bat - 1 - Giai Phong - 1 - Dinh Cong - 1 - Tran Dien - 1 - Le Trong Tan - 1 - Truong Chinh - 1 - quay dau tai diem mo doi dien 173B Truong Chinh - 1 - Truong Chinh - 1 - Ton That Tung - 1 - Chua Boc - 1 - Thai Ha - 1 - Huynh Thuc Khang - 1 - Nguyen Chi Thanh - 1 - Lieu Giai - 1 - Dao Tan - 1 - Nguyen Khanh Toan - 1 - Nguyen Van Huyen - 1 - Cong vien Nghia Do
+## EDGES
+227 148 3
+148 157 8
+157 228 8
+228 182 8
+182 183 6
+183 200 6
+200 229 7
+229 230 6
+230 231 6
+231 232 8
+232 73 6
+73 233 4
+233 234 4
+234 235 4
+235 54 4
+54 60 3
+60 236 4
+236 60 4
+60 54 3
+54 237 7
+237 54 6
+54 235 5
+235 234 7
+234 233 5
+233 73 3
+73 73 6
+73 231 8
+231 230 8
+230 229 8
+229 200 6
+200 183 4
+183 182 6
+182 228 7
+228 157 5
+157 148 3
+148 227 7
+# ROUTE_ID
 13
-Cong vien nuoc Ho Tay - 1 - Lac Long Quan - 1 - Hoang Quoc Viet - 1 - Nguyen Van Huyen - 1 - To Hieu - 1 - Tran Quoc Hoan - 1 - Pham Van Dong-quay dau tai diem mo doi dien 158 Pham Van Dong-Pham Van Dong - 1 - Ho Tung Mau - 1 - Cau Dien - 1 - Hoang Cong Chat - 1 - Phan Ba Vanh - 1 - Cau Noi- Co Nhue
-Co Nhue - 1 - Cau Noi - 1 - Phan Ba Vanh - 1 - Hoang Cong Chat - 1 - Cau Dien - 1 - Ho Tung Mau - 1 - Pham Van Dong - 1 - Tran Quoc Hoan - 1 - To Hieu - 1 - Nguyen Van Huyen - 1 - Hoang Quoc Viet - 1 - Vong xuyen Buoi, Hoang Quoc Viet - 1 - Buoi - 1 - Lac Long Quan - 1 - Cong vien nuoc Ho Tay
+## EDGES
+238 239 6
+239 149 8
+149 148 3
+148 240 6
+240 241 8
+241 150 5
+150 150 4
+150 111 4
+111 112 3
+112 242 8
+242 243 6
+243 244 6
+245 246 6
+246 243 5
+243 242 8
+242 112 6
+112 111 3
+111 150 5
+150 241 7
+241 240 7
+240 148 8
+148 149 5
+149 247 8
+247 186 4
+186 239 5
+239 238 7
+# ROUTE_ID
 14
-Bo Ho - 1 - Cau Go - 1 - Hang Thung - 1 - Hang Tre - 1 - Hang Muoi - 1 - Tran Nhat Duat - 1 - Yen Phu (quay dau tai so nha 92 Yen Phu) - 1 - Diem trung chuyen Long Bien - 1 - Hang Dau - 1 - Quan Thanh - 1 - Thuy Khue - 1 - Lac Long Quan - 1 - Hoang Quoc Viet - 1 - Diem trung chuyen xe buyt Hoang Quoc Viet - 1 - Hoang Quoc Viet - 1 - Pham Van Dong - 1 - quay dau tai diem mo doi dien ciputra (gan chan cau Thang Long) - 1 - Ngo 12 Pham Van Dong - 1 - Tan Xuan - 1 - Co Nhue
-Co Nhue - 1 - Tan Xuan - 1 - quay dau tai diem mo doi dien truong trung cap nghe GTVT Thang Long-Tan Xuan-Pham Van Dong-quay dau tai diem mo doi dien 158 Pham Van Dong - 1 - Pham Van Dong - 1 - Hoang Quoc Viet - 1 - DTC xe buyt Hoang Quoc Viet - 1 - Hoang Quoc Viet - 1 - Vong xuyen Buoi, Hoang Quoc Viet - 1 - Buoi - 1 - Hoang Hoa Tham - 1 - cau vuot Hoang Hoa Tham - 1 - Hoang Hoa Tham - 1 - Phan Dinh Phung - 1 - Hang Dau - 1 - Tran Nhat Duat - 1 - Nguyen Huu Huan - 1 - Lo Su - 1 - Dinh Tien Hoang - 1 - Bo Ho
+## EDGES
+178 248 4
+248 249 7
+249 93 5
+93 94 4
+94 5 3
+5 250 8
+250 76 7
+76 7 5
+7 9 6
+9 251 6
+251 239 4
+239 149 8
+149 252 7
+252 149 3
+149 150 3
+150 253 7
+253 254 8
+254 245 6
+245 254 6
+254 254 8
+254 150 5
+150 150 3
+150 149 7
+149 255 8
+255 149 7
+149 247 7
+247 186 7
+186 191 4
+191 256 4
+256 191 8
+191 38 4
+38 7 8
+7 5 5
+5 77 5
+77 257 3
+257 171 4
+171 178 3
+# ROUTE_ID
 15
-Ben xe Gia Lam - 1 - Ngo Gia Kham - 1 - Ngoc Lam - 1 - Nguyen Van Cu - 1 - Ngo Gia Tu - 1 - Cau Duong - 1 - Quoc Lo 3 - 1 - Doc Van - 1 - Co Loa - 1 - Duong cai tranh Quoc lo 3 - 1 - Quoc lo 3 - 1 - Dong Anh - 1 - Nguyen Khe - 1 - Phu Lo - 1 - Da Phuc - 1 - Pho Ni
-Pho Ni - 1 - Da Phuc - 1 - Phu Lo - 1 - Nguyen Khe - 1 - Dong Anh - 1 - Duong cai tranh Quoc lo 3 - 1 - Quoc lo 3 - 1 - Co Loa - 1 - Doc Van - 1 - Quoc lo 3 - 1 - Cau Duong - 1 - Ngo Gia Tu - 1 - Nguyen Van Cu - 1 - Ngo Gia Kham - 1 - Ben xe Gia Lam
+## EDGES
+0 1 7
+1 2 6
+2 3 7
+3 208 4
+208 209 3
+209 258 8
+258 259 5
+259 260 7
+260 261 4
+261 258 7
+258 262 3
+262 263 8
+263 264 5
+264 265 5
+265 266 4
+266 265 6
+265 264 3
+264 263 6
+263 262 5
+262 261 3
+261 258 6
+258 260 5
+260 259 6
+259 258 3
+258 209 4
+209 208 3
+208 3 5
+3 1 8
+1 0 3

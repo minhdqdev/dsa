@@ -3,17 +3,10 @@ Find shortest path in weighted graph using dijkstra's algorithm
 
 Author: minhdq99hp
 */
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "libfdr/jrb.h"
+#include "stdio.h"
+#include "weighted_graph.h"
 
 #define INF 1000000
-
-typedef struct {
-    JRB edges;
-    JRB vertices;
-} Graph;
 
 Graph createGraph(){
     Graph newGraph;
@@ -160,67 +153,67 @@ void printIndegree(Graph graph, int v){
     printf("\n");
 }
 
-void relax(Graph graph, int u, int v){
-    JRB node1 = jrb_find_int(graph.vertices, u);
-    JRB node2 = jrb_find_int(graph.vertices, v);
+// void relax(Graph graph, int u, int v){
+//     JRB node1 = jrb_find_int(graph.vertices, u);
+//     JRB node2 = jrb_find_int(graph.vertices, v);
 
-    if(node2->val.d > node1->val.d + getEdgeValue(graph, u, v)){
-        node2->val.d = node1->val.d + getEdgeValue(graph, u, v);
-        node2->val.v = node1;
-    }
-}
+//     if(node2->val.d > node1->val.d + getEdgeValue(graph, u, v)){
+//         node2->val.d = node1->val.d + getEdgeValue(graph, u, v);
+//         node2->val.v = node1;
+//     }
+// }
 
-double shortestPath(Graph graph, int s, int t, int *path, int *length){
-    int weight = 0;
+// double shortestPath(Graph graph, int s, int t, int *path, int *length){
+//     int weight = 0;
     
-    // TODO
+//     // TODO
 
-    return weight;
-}
+//     return weight;
+// }
 
-int main(){
-    Graph g = createGraph();
+// int main(){
+//     Graph g = createGraph();
 
-    addVertex(g, 1, "S");
-    addVertex(g, 2, "V2");
-    addVertex(g, 3, "V3");
-    addVertex(g, 4, "V4");
-    addVertex(g, 5, "V5");
-    addVertex(g, 6, "V6");
-    addVertex(g, 7, "V7");
-    addVertex(g, 8, "T");
+//     addVertex(g, 1, "S");
+//     addVertex(g, 2, "V2");
+//     addVertex(g, 3, "V3");
+//     addVertex(g, 4, "V4");
+//     addVertex(g, 5, "V5");
+//     addVertex(g, 6, "V6");
+//     addVertex(g, 7, "V7");
+//     addVertex(g, 8, "T");
 
-    addEdge(g, 1, 2, 9);
-    addEdge(g, 1, 6, 14);
-    addEdge(g, 1, 7, 15);
-    addEdge(g, 2, 3, 24);
-    addEdge(g, 6, 3, 18);
-    addEdge(g, 6, 5, 30);
-    addEdge(g, 6, 7, 5);
-    addEdge(g, 7, 5, 20);
-    addEdge(g, 5, 4, 11);
-    addEdge(g, 3, 5, 2);
-    addEdge(g, 4, 3, 6);
-    addEdge(g, 3, 8, 19);
-    addEdge(g, 5, 8, 16);
-    addEdge(g, 4, 8, 6);
-    addEdge(g, 7, 8, 44);
+//     addEdge(g, 1, 2, 9);
+//     addEdge(g, 1, 6, 14);
+//     addEdge(g, 1, 7, 15);
+//     addEdge(g, 2, 3, 24);
+//     addEdge(g, 6, 3, 18);
+//     addEdge(g, 6, 5, 30);
+//     addEdge(g, 6, 7, 5);
+//     addEdge(g, 7, 5, 20);
+//     addEdge(g, 5, 4, 11);
+//     addEdge(g, 3, 5, 2);
+//     addEdge(g, 4, 3, 6);
+//     addEdge(g, 3, 8, 19);
+//     addEdge(g, 5, 8, 16);
+//     addEdge(g, 4, 8, 6);
+//     addEdge(g, 7, 8, 44);
 
-    int s, t, length, path[1000];
+//     int s, t, length, path[1000];
 
-    s = 1;
-    t = 8;
+//     s = 1;
+//     t = 8;
 
-    double weight = shortestPath(g, s, t, path, &length);
+//     double weight = shortestPath(g, s, t, path, &length);
 
-    if(weight == INF) printf("No path between %d and %d.\n", s, t);
+//     if(weight == INF) printf("No path between %d and %d.\n", s, t);
 
-    for(int i=0; i<length; i++) printf("%4d", path[i]);
-    printf("Total weight: %.2f\n", weight);
+//     for(int i=0; i<length; i++) printf("%4d", path[i]);
+//     printf("Total weight: %.2f\n", weight);
 
 
-    return 0;
-}
+//     return 0;
+// }
 
 /* MINI PROJECT 2
 

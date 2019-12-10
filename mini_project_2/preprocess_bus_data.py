@@ -5,6 +5,7 @@ Reference:
 - https://gist.github.com/J2TEAM/9992744f15187ba51d46aecab21fd469
 '''
 from unidecode import unidecode
+from random import randint
 
 def preprocess(filename, output_filename=None):
     if output_filename is None:
@@ -56,8 +57,8 @@ def preprocess(filename, output_filename=None):
 
     with open(output_filename, 'w') as f:
         f.write('# VERTICES\n')
-        # for verticeName in sorted(list(vertices.keys())):
-        for verticeName in vertices.keys():
+        for verticeName in sorted(list(vertices.keys())):
+        # for verticeName in vertices.keys():
             f.write(f'{vertices[verticeName]} : {verticeName}\n')
 
         for route_id in data.keys():
@@ -68,4 +69,4 @@ def preprocess(filename, output_filename=None):
 
 
 if __name__ == '__main__':
-    preprocess('bus_data.txt', 'output.txt')
+    preprocess('pre.txt', 'bus_data.txt')
