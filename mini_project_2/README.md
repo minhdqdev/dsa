@@ -4,7 +4,7 @@
 - Hung Nguyen Tri (hung.nt176773@sis.hust.edu.vn)
 - Dien Pham Ngoc (dien.pn176715@sis.hust.edu.vn)
 
-### Assigned Tasks
+## Assigned Tasks
 - **Implement weighted graph and build some neccessary API**: Minh
 - **Preprocess data**: Minh
 - **Read data from file**: Minh
