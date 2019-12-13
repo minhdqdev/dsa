@@ -8,6 +8,11 @@
 **Team**: 3 members (I'm the team leader).
 
 ## [Mini Project 2](https://github.com/minhdq99hp/dsa/tree/master/mini_project_2)
+**Objective**: Make a program to simulate the bus map in Ha Noi.
+
+**Features**: using Red-Black Tree (libfdr library), Dijkstra's algorithm.
+
+**Team**: 3 members (I'm the team leader).
 
 ## [Theories](https://github.com/minhdq99hp/dsa/tree/master/theories)
 **Objective**: Simulate a bus map in Hanoi.
