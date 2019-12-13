@@ -11,6 +11,7 @@ Use for measuring the elapsed time after running a function.
 #include <stdlib.h>
 #include <time.h> // for clock(), time(), and clock_gettime()
 #include <sys/time.h> // for gettimeofday()
+
 void doSomething(){
     sleep(2); // sleep for 1 seconds
 }
