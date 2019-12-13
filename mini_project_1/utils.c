@@ -1,3 +1,10 @@
+/*
+C language is shitty !. 
+Here are some useful functions to work with string
+
+Author: minhdq99hp
+*/
+
 #include <string.h>
 #include <stdio.h>
 
@@ -30,6 +37,9 @@ int hasNewline(char *str){
 }
 
 void strip(char *str, char *result){
+    /*
+    Remove spaces in both direction
+    */
     // right strip
     int i=0;
     while(str[i] != '\0') i++;
