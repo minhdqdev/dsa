@@ -7,6 +7,7 @@
 #include "utils.c"
 
 #define INF 1000000
+#define INFINITIVE_VALUE 1000000
 
 typedef struct{
     JRB edges;
@@ -315,7 +316,7 @@ double findShortestPath(Graph graph, int s, int t, int *path, int *length){
         }
     }
    total = distance[t];//Gan gia tri tu s den t cho bien total
-   if (total != INF)//Neu total khac INFINITIVE VALUE
+   if (total != INFINITIVE_VALUE)//Neu total khac INFINITIVE VALUE
    {
 	   //Luu cac vertex tren duong tu s den v da chon vao trong mang temp, nhung luu nguoc tu t
        tmp[0] = t;
@@ -438,7 +439,7 @@ int main(){
                 // output is the array of vertices' id (or name)
                 // Ex: 01 -> 04 -> 26
                 int n;
-                n = findShortestPath(g, v1, v2, output, &length);
+                n=findShortestPath(g, v1, v2, output, &length);
                 // printf("%d\n", n);
                 printf("The shortest path from %s to %s is:\n", getVertexNameById(g, v1), getVertexNameById(g, v2));
                 if(n == INF){
