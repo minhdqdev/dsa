@@ -27,12 +27,8 @@ Graph createGraph(){
 void addVertex(Graph graph, int id, char *name){
     JRB node = jrb_find_int(graph.vertices, id);
 
-    if(node == NULL){
-        jrb_insert_int(graph.vertices, id, new_jval_s(name));
-    }
-    else{
-        node->val = new_jval_s(name);
-    }
+    if(node == NULL) jrb_insert_int(graph.vertices, id, new_jval_s(name));
+    else node->val = new_jval_s(name);
 }
 
 char *getVertexNameById(Graph graph, int id){
@@ -84,7 +80,10 @@ void addEdge(Graph graph, int v1, int v2, double weight){
     if(subNode == NULL){
         jrb_insert_int(subTree, v2, new_jval_d(weight));
     }
-    
+    else{
+        subNode->val.d = weight;        
+    }
+
 }
 
 double getEdgeValue(Graph graph, int v1, int v2){
@@ -332,46 +331,112 @@ double findShortestPath(Graph graph, int s, int t, int *path, int *length){
    return total;//Tra ve total - khoang cach ngan nhat tu s den t
 }
 
-void getRoutesFromPath(Graph graph, int* output,int length){
+int getRoutesFromPath(Graph graph, int* output, int length){
+    int numOfRoutes = 0;
+    char routeNameList[100][10];
+
+    Dllist listOfRoutes = new_dllist();
+
     for(int i=0; i<length-1; i++){
-        //int i=1;
-        printf("%s => %s:", getVertexNameById(graph, output[i]), getVertexNameById(graph, output[i+1]));
+        JRB candidateRoutes = make_jrb();
+
         JRB node;
         jrb_traverse(node, graph.routes){
             JRB subTree = (JRB)jval_v(node->val);
-            JRB subNode1, subNode2;
-            int check1=0,check2=0;
-            jrb_traverse(subNode1, subTree){
-                if (jval_i(subNode1->key)== output[i]){
-                    check1=1;
+            JRB subNode;
+            int check1 = 0, check2 = 0;
+
+            jrb_traverse(subNode, subTree){
+                if(jval_i(subNode->key) == output[i]) check1 = 1;
+                else if(jval_i(subNode->key) == output[i+1]) check2 = 1; 
+
+                if(check1 && check2) break;
+            }
+
+            if(check1 && check2){ 
+                JRB a = jrb_find_int(graph.edges, output[i]);
+                JRB subTree = (JRB)jval_v(a->val);
+                JRB b = jrb_find_int(subTree, output[i+1]);
+
+                if(b != NULL){ // found a candidate route
+                    jrb_insert_str(candidateRoutes, jval_s(node->key), new_jval_i(1));
                 }
             }
-            jrb_traverse(subNode2, subTree){
-                if (jval_i(subNode2->key) == output[i+1]){
-                    check2=1;
-                }
-            }
-            int k1=getEdgeValue(graph, output[i+1], output[i]);
-            int k2=getEdgeValue(graph, output[i], output[i+1]);
-            //printf("%d", k1);
-            if (check1 ==1 && check2==1 && ((0<k1 && k1<INF) ||(0<k2 && k2<INF))) {
-                printf("  %s", jval_s(node->key));
-            }
-            /*printf("%d  %s \n",check1, jval_i(subNode1->key));
-            JRB subNode2= jrb_next(subNode1);
-            JRB subNode3= jrb_prev(subNode1);
-
-            if (check1 == 1 && (jval_i(subNode2->key)==output[i+1] || jval_i(subNode3->key)==output[i+1])) {
-                printf("%d -> %d: %s\n", output[i], output[i+1], jval_i(node->key));
-            }*/
-
         }
-        printf("\n");
+        dll_append(listOfRoutes, new_jval_v(candidateRoutes));
+
+        // jrb_traverse(node, candidateRoutes){
+        //     char* routeName = jval_s(node->key);
+        //     printf("%s ", routeName);
+        // }
+        // printf("\n");
     }
+
+    int n = 0;
+    char l[100][10];
+    
+    Dllist node = dll_first(listOfRoutes);
+    JRB sub = (JRB)jval_v(node->val);
+    JRB s;
+    jrb_traverse(s, sub){
+        strcpy(l[n++], jval_s(s->key));
+    }
+
+    // printf("n: %d\n", n);
+
+    for(Dllist nd=node->flink; nd!=listOfRoutes; nd=nd->flink){
+        int m = 0;
+        char r[100][10];
+
+        sub = (JRB)jval_v(nd->val);
+
+        jrb_traverse(s, sub) strcpy(r[m++], jval_s(s->key));
+
+        // printf("m: %d\n", m);
+
+        // get intersection
+        int numIntersection = 0;
+        char k[100][10];
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(strcmp(l[i], r[j]) == 0){
+                    strcpy(k[numIntersection++], l[i]);
+                }
+            }
+        }
+
+        if(numIntersection == 0){ // found a route
+            // printf("Route: %s\n", l[0]);
+            strcpy(routeNameList[numOfRoutes++], l[0]);
+
+            for(int i=0; i<m; i++){
+                strcpy(l[i], r[i]);
+            }
+            n = m;
+        }
+        else{
+            // l = k;
+            for(int i=0; i<numIntersection; i++){
+                strcpy(l[i], k[i]);
+            }
+            n = numIntersection;
+        }
+    }
+    
+    strcpy(routeNameList[numOfRoutes++], l[0]);
+
+    printf("The routes you have to take is: \n");
+    printf("%s", routeNameList[0]);
+    for(int i=1; i<numOfRoutes; i++){
+        printf(" -> %s", routeNameList[i]);
+    }
+    printf("\n");
+
+
+    return numOfRoutes;
 }
 
 int main(){
-    // load graph from file
     Graph g = createGraph();
 
     loadFromFile(g, "bus_data.txt");
@@ -407,6 +472,7 @@ int main(){
 
                 char name1[300];
                 char name2[300];
+                char temp[300];
                 char sure[300];
                 printf("Fill in the information...\n");
                 printf("Press ENTER to continue...\n");
@@ -415,6 +481,9 @@ int main(){
                 fflush(stdin);
                 fgets(name1, 300, stdin);
                 removeNewline(name1);
+                strip(name1, temp);
+                strcpy(name1, temp);
+
                 v1 = getVertexIdByName(g, name1);
                 if(v1 == -1){
                     printf("Invalid picking up point!\n");
@@ -425,6 +494,8 @@ int main(){
                 //fflush(stdin);
                 fgets(name2, 300, stdin);
                 removeNewline(name2);
+                strip(name2, temp);
+                strcpy(name2, temp);
                 v2 = getVertexIdByName(g, name2);
                 
                 //printf("%d:%s %d:%s!",v1, name1, v2, name2);
@@ -445,20 +516,21 @@ int main(){
                     printf("There is no path from %s to %s!\n", getVertexNameById(g, v1), getVertexNameById(g, v2));
                 }
                 else{
-                    for(int i=0; i<length; i++){
-                        if(i == 0){
-                            printf("%s", getVertexNameById(g, output[i]));
-                        }
-                        else{
-                            printf(" => %s", getVertexNameById(g, output[i]));	
-                        }    
+                    printf("%s", getVertexNameById(g, output[0]));
+                    for(int i=1; i<length; i++){
+                        printf(" -> %s", getVertexNameById(g, output[i]));	
                     }	
+                    printf("\n\n");
 
-                    printf("\n");
-                    for(int i=0; i<length; i++) printf("%d  ", output[i]);
-                    printf("\n");
+                    // for(int i=0; i<length; i++) printf("%d  ", output[i]);
+                    // printf("\n");
+
+                    // char routes[100][10];
                     
-                    getRoutesFromPath(g, output, length);
+                    int numOfRoutes = getRoutesFromPath(g, output, length);
+                
+                    
+                    
                 }
                 printf("\nFinished!\n");
 
