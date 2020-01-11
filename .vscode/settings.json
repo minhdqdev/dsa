@@ -3,6 +3,9 @@
         "string.h": "c",
         "string_view": "c",
         "tuple": "c",
-        "dllist.h": "c"
+        "dllist.h": "c",
+        "cstring": "c",
+        "*.txx": "c",
+        "unordered_map": "c"
     }
 }

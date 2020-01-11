@@ -30,11 +30,12 @@ void printArray(int *arr, int size){
     printf("\n");    
 }
 
+// binary search
 // return -1 if not found
 int search( void* buf, int size, int l, int r, void * item, int (*compare)(void const*, void const*)) {
     if (r < l) return -1;
     int i = (l + r)/2;
-    int res = compare( item, (char*)buf+(size*i) );
+    int res = compare(item, (char*)buf+(size*i) );
     if (res==0) return i;
     else if (res < 0) return search(buf, size, l, i-1, item, compare);
     else return search(buf, size, i+1, r, item, compare);
@@ -45,19 +46,14 @@ int main(){
     int a[10] = {9,7,3,5,1,0,2,6,4,8};
 
     qsort(a, n, sizeof(int), int_compare);
-
     printArray(a, n);
 
     int item = 12;
-
     int res = search(a, sizeof(int), 0, n-1, &item, int_compare);
-
     printf("Res: %d\n", res);
 
     qsort(a, n, sizeof(int), int_compare_reverse);
-
     printArray(a, n);
-
 
     return 0;
 }
