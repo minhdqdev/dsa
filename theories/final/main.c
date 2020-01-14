@@ -10,6 +10,23 @@ Dang Quang Minh - 20176823
 #include "libfdr/jrb.h"
 #include "libfdr/dllist.h"
 
+void readFile(const char *filename){
+    FILE *fp = fopen(filename, "r");
+
+    if(fp == NULL){
+        perror("Error while opening the file.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    char buffer[500];
+    while(fgets(buffer, 500, fp)){
+        removeNewline(buffer);
+        
+    }
+
+    fclose(fp);
+}
+
 void printMenu(){
     printf("1. Do something\n");
     printf("2. Do something\n");

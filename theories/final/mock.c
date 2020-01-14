@@ -1,5 +1,5 @@
 /*
-Final Exam IT3240E
+Mock Exam IT3240E
 Dang Quang Minh - 20176823
 */
 

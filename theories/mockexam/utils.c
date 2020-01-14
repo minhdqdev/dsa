@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int strBeginsWith(char* a, char* b){
     return !strncmp(a, b, strlen(b));
@@ -44,9 +45,31 @@ void strip(char *str, char *result){
     result[i-j] = '\0';
 }
 
+int split(char *str, char *delim, char *output[]){
+    int n = 0;
+    char *token;
+
+    token = strtok(str, delim);
+    while(token != NULL){
+        output[n++] = token;
+        // printf("%s\n", token);
+        token = strtok(NULL, delim);
+    }
+
+    return n;
+}
+
 // int main(){
 //     char a[50] = "test1.txt";
 //     char b[50] = "test1.txt ";
 
 //     printf("%d\n", strBeginsWith(a, b));
+
+//     char c[] = "   1        2    10   ";
+
+//     char *output[100];
+//     int n = split(c, " ", output);
+
+//     for(int i=0; i<n; i++) printf("%s\n", output[i]);
+   
 // }
