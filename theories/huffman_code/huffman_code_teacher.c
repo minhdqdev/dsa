@@ -206,11 +206,11 @@ HuffmanTree makeHuffman(int fTable[]) {
 			// printf("last %d %c %d\n", lastNodeID, i, fTable[i]);
 		}
 	
-    /*	for (n1 = dll_first(queue); n1!=queue; n1=dll_next(n1))
-        {
-            printf("%d %d\n", jval_iarray(dll_val(n1))[0], jval_iarray(dll_val(n1))[1]);
-        }
-    */	
+/*	for (n1 = dll_first(queue); n1!=queue; n1=dll_next(n1))
+	{
+		printf("%d %d\n", jval_iarray(dll_val(n1))[0], jval_iarray(dll_val(n1))[1]);
+	}
+*/	
 	// regroup nodes in priority queue
 	for (;;)
 	{
@@ -319,7 +319,7 @@ int compress(char* buffer, char*huffman, Coding htable[]) {
 		}
 	}
 	
-	printf("Original size: %d bytes\n", strlen(buffer));
+	printf("Original size: %ld bytes\n", strlen(buffer));
 	printf("%s\n", buffer);
 	// Compress
 	n = strlen(buffer);

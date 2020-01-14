@@ -4,21 +4,21 @@ Directed Graph implemented by Red-Black Tree
 Author: minhdq99hp
 */
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
 #include "libfdr/jrb.h"
+#include "libfdr/dllist.h"
 
-typedef struct {
+typedef struct{
     JRB edges;
     JRB vertices;
 } Graph;
 
 Graph createGraph(){
-    Graph newGraph;
-
-    newGraph.edges = make_jrb();
-    newGraph.vertices = make_jrb();
-
-    return newGraph;
+    Graph g;
+    g.edges = make_jrb();
+    g.vertices = make_jrb();
+    return g;
 }
 
 void addVertex(Graph graph, int id, char *name){
@@ -34,86 +34,58 @@ void addVertex(Graph graph, int id, char *name){
 
 char *getVertex(Graph graph, int id){
     JRB node = jrb_find_int(graph.vertices, id);
-
+    if(node == NULL) return NULL;
     return jval_s(node->val);
 }
 
 void addEdge(Graph graph, int v1, int v2){
     JRB node = jrb_find_int(graph.edges, v1);
-    
     if(node == NULL){
-        JRB tree = make_jrb();
-        node = jrb_insert_int(graph.edges, v1, new_jval_v(tree));
+        JRB subTree = make_jrb();
+        jrb_insert_int(graph.edges, v1, new_jval_v(subTree));
+        jrb_insert_int(subTree, v2, new_jval_i(1));
     }
-
-    JRB subTree = (JRB)jval_v(node->val);
-    jrb_insert_int(subTree, v2, new_jval_i(1));
+    else{
+        JRB subTree = (JRB)jval_v(node->val);
+        JRB subNode = jrb_find_int(subTree, v2);
+        if(subNode == NULL) jrb_insert_int(subTree, v2, new_jval_i(1));
+    }
 }
 
 int hasEdge(Graph graph, int v1, int v2){
     JRB node = jrb_find_int(graph.edges, v1);
-
     if(node == NULL) return 0;
     else{
-        JRB subTree = (JRB)jval_v(node->val);
-        JRB node2 = jrb_find_int(subTree, v2);
-
-        if(node2 == NULL) return 0;
-        else return 1;
+        node = jrb_find_int(node, v2);
+        return node != NULL;
     }
 }
 
 int indegree(Graph graph, int v, int *output){
     JRB node;
-
-    int total = 0;
-
+    int n = 0;
     jrb_traverse(node, graph.edges){
         JRB subTree = (JRB)jval_v(node->val);
-
-        JRB foundNode = (JRB)jrb_find_int(subTree, v);
-
-        if(foundNode != NULL) output[total++] = jval_i(node->key);
+        JRB subNode;
+        jrb_traverse(subNode, subTree){
+            if(jval_i(subNode->key) == v) output[n++] = jval_i(node->key);
+        }
     }
 
-    return total;
+    return n;
 }
 
 int outdegree(Graph graph, int v, int *output){
     JRB node = jrb_find_int(graph.edges, v);
-
-    int total = 0;
-
-    if(node == NULL) return total;
-
-    JRB foundNode;
-    JRB subTree = (JRB)jval_v(node->val);
-
-    jrb_traverse(foundNode, subTree){
-        output[total++] = jval_i(foundNode->key);
+    int n=0;
+    if(node != NULL){
+        JRB subNode;
+        JRB subTree = (JRB)jval_v(node->val);
+        jrb_traverse(subNode, subTree){
+            output[n++] = jval_i(subNode->key); 
+        }
     }
-    return total;
-}
-
-int DAG(Graph graph){
-    // TODO:
-}
-
-void dropGraph(Graph graph){
-    JRB node;
-
-    jrb_free_tree(graph.vertices);
-    jrb_traverse(node, graph.edges) jrb_free_tree(jval_v(node->val));
-    jrb_free_tree(graph.edges);
-}
-
-void printVertices(Graph graph){
-    JRB node;
-    printf("Vertices:");
-    jrb_traverse(node, graph.vertices){
-        printf("%4s", jval_s(node->val));
-    }
-    printf("\n");
+    return n;    
 }
 
 void printOutdegree(Graph graph, int v){
@@ -132,6 +104,52 @@ void printOutdegree(Graph graph, int v){
     printf("\n");
 }
 
+int DAG(Graph graph){
+    int start;
+    // int stop = -1;
+    JRB node;
+    jrb_traverse(node, graph.vertices){ // Do DFS with every vertices
+        start = jval_i(node->key);
+
+        int visited[1000];
+        memset(visited, 0, 1000);
+
+        JRB subNode;
+        jrb_traverse(subNode, graph.edges) visited[jval_i(subNode->key)] = 0; 
+
+        Dllist s = new_dllist();
+        dll_append(s, new_jval_i(start));
+
+        while(!dll_empty(s)){
+            Dllist node = dll_last(s);
+            int u = jval_i(node->val);
+            dll_delete_node(node);
+
+            if(!visited[u]){
+                visited[u] = 1;
+
+                int output[1000];
+                int n = outdegree(graph, u, output);
+
+                for(int i=0; i<n; i++){
+                    if(!visited[output[i]]) dll_append(s, new_jval_i(output[i]));
+                    else{
+                        if(output[i] == start) return 0;                    
+                    }
+                }
+            }
+        }
+    } 
+    return 1;
+}
+
+void dropGraph(Graph graph){
+    jrb_free_tree(graph.vertices);
+    JRB node;
+    jrb_traverse(node, graph.edges) jrb_free_tree((JRB)jval_v(node->val));
+    jrb_free_tree(graph.edges);
+}
+
 void printIndegree(Graph graph, int v){
     int output[1000];
     int total;
@@ -148,6 +166,16 @@ void printIndegree(Graph graph, int v){
     printf("\n");
 }
 
+void printVertices(Graph graph){
+    JRB node;
+    printf("Vertices:");
+    jrb_traverse(node, graph.vertices){
+        printf("%4s", jval_s(node->val));
+    }
+    printf("\n");
+}
+
+
 int main(){
     Graph g = createGraph();
 
@@ -160,15 +188,17 @@ int main(){
 
     addEdge(g, 0, 1);
     addEdge(g, 1, 2);
-    addEdge(g, 2, 0);
+    // addEdge(g, 2, 0);
     addEdge(g, 1, 3);
+    
+    if(DAG(g)) printf("YES\n");
+    addEdge(g, 1, 0);
+    if(!DAG(g)) printf("NO\n");
 
-    printOutdegree(g, 1);
-    printIndegree(g, 0);
+    printOutdegree(g, 2);
+    printIndegree(g, 2);
 
-
-    // if(DAG(g)) printf("The graph is a cycle\n");
-    // else printf("Have cycles in the graph\n");
+    dropGraph(g);
 
     return 0;
 }

@@ -6,6 +6,7 @@
         "dllist.h": "c",
         "cstring": "c",
         "*.txx": "c",
-        "unordered_map": "c"
+        "unordered_map": "c",
+        "jval.h": "c"
     }
 }
