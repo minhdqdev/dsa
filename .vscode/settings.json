@@ -9,6 +9,8 @@
         "unordered_map": "c",
         "jval.h": "c",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "__config": "cpp",
+        "__nullptr": "cpp"
     }
 }
