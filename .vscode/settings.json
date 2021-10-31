@@ -8,6 +8,7 @@
         "*.txx": "c",
         "unordered_map": "c",
         "jval.h": "c",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp"
     }
 }

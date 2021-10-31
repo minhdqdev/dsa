@@ -25,6 +25,8 @@ if __name__ == '__main__':
             copy(snippet_path, code_path)
         else:
             pass
+    else:
+        copy(snippet_path, code_path)
 
     print('New problem is created. Program exited with code 0')
     sys.exit(0)
