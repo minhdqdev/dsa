@@ -11,6 +11,13 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "__config": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "iterator": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp"
     }
 }
