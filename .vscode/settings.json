@@ -18,6 +18,7 @@
         "list": "cpp",
         "map": "cpp",
         "set": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "forward_list": "cpp"
     }
 }
