@@ -9,6 +9,9 @@ if __name__ == '__main__':
     if not problem_name:
         print('Problem name can\'t be empty. Program exited with code 1.')
         sys.exit(1)
+    elif len(problem_name) > 128:
+        print("Problem name is too long (>128). Program exited with code 1.")
+        sys.exit(1)
     
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
