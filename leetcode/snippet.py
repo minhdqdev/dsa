@@ -19,4 +19,5 @@ if __name__ == '__main__':
 
     end = datetime.now()
 
-    print(ans, (end-start))
+    print(ans)
+    print('\nRuntime:', (end-start))
