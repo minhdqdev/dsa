@@ -7,10 +7,10 @@ class Solution:
         shifted = 0
         
         for i in range(n-1):
-            if nums[i] < nums[i+1]:
+            if nums[i] > nums[i+1]:
                 shifted = i + 1
                 break
-        
+    
         def bin_search(nums, shifted, left, right, target):
             if left > right:
                 return False
@@ -35,9 +35,9 @@ if __name__ == '__main__':
 
     start = datetime.now()
     # RUN MAIN FUNCTION IN HERE
-
-    ans = solution.main()
-
+    nums = [1,0,1,1,1]
+    target = 0
+    ans = solution.search(nums, target)
     end = datetime.now()
 
     print(ans)
