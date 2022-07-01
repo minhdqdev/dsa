@@ -1,12 +1,12 @@
-import heapq
-from collections import deque
-from datetime import datetime
 from typing import List
+from datetime import datetime
+import heapq
 
 # DEFINE SOLUTION IN HERE
 
-class Solution():
-    pass
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        return heapq.nsmallest(k, points, key=lambda p: p[0] ** 2 + p[1] ** 2)
 
 
 if __name__ == '__main__':
