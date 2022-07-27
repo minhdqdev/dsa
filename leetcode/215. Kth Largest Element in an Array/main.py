@@ -16,6 +16,10 @@ class Solution:
         
         return b * -1
 
+class Solution2:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        return heapq.nlargest(k, nums)[-1]
+
 
 if __name__ == '__main__':
     solution = Solution()
